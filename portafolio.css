@@ -104,10 +104,11 @@ body {
 }
 
 .mission-image img {
-  width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+  width: 70%; /* La imagen ocupa todo el ancho del contenedor */
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: float-sway-rotate 6s ease-in-out infinite;
 }
 
 .mission-text {
@@ -139,3 +140,34 @@ body {
   }
 }
 
+/* Animación de flotación */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px); /* Mueve la imagen hacia arriba */
+  }
+  100% {
+    transform: translateY(0); /* Regresa la imagen a su posición original */
+  }
+}
+
+/* Animación de flotación, balanceo y rotación */
+@keyframes float-sway-rotate {
+  0% {
+    transform: translate(0, 0) rotate(0deg); /* Sin movimiento ni rotación */
+  }
+  25% {
+    transform: translate(10px, -10px) rotate(-5deg); /* Mueve y rota a la izquierda */
+  }
+  50% {
+    transform: translate(0, 0) rotate(0deg); /* Regresa a la posición original y sin rotación */
+  }
+  75% {
+    transform: translate(-10px, -10px) rotate(5deg); /* Mueve y rota a la derecha */
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg); /* Regresa a la posición original y sin rotación */
+  }
+}
