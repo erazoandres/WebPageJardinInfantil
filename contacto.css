@@ -1,16 +1,24 @@
-/* Estilos generales del contacto */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+  
 .contact-section {
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
-    height: 100vh;
-    background: url('fondo_contacto.jpg') no-repeat center center/cover; /* Imagen de fondo */
+    height: 100vh; /* Asegura que la sección ocupe toda la altura de la ventana */
+    
+    position: relative; /* Permite posicionar elementos hijos correctamente */
   }
   
   .contact-container {
     max-width: 500px;
     width: 100%;
     padding: 20px;
+    position: relative; /* Asegura que el contenedor se posicione correctamente sobre el fondo */
   }
   
   .contact-form {
@@ -18,6 +26,7 @@
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 20px;
+    max-width: 320px;
   }
   
   .contact-form h3 {
@@ -66,4 +75,76 @@
   .contact-form button:hover {
     background-color: #1a9a9a;
   }
-  
+
+  /* Fondo de video */
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.video_contacto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  background-size: cover;
+  filter: brightness(0.6); /* Ajusta el brillo para hacer que el contenido sea más legible */
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(15px);
+  background: rgba(34, 193, 195, 0.7); /* Fondo con color azul-verde y opacidad */
+  border-bottom: 1px solid rgba(34, 193, 195, 0.4);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #fff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.nav-links a:hover {
+  background: rgba(255, 255, 255, 0.3);
+  color: #22C1C3;
+}

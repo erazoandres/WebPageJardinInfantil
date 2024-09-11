@@ -12,6 +12,7 @@ body {
 
 /* Estilos para la sección de servicios */
 .services-section {
+  margin-top: 50px;
   padding: 50px 5%;
   background-color: #f0f0f0;
 }
