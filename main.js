@@ -66,3 +66,23 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+
+document.addEventListener('DOMContentLoaded', function() {
+  const imageContainer = document.querySelector('.image-container');
+
+  window.addEventListener('scroll', function() {
+    const rect = imageContainer.getBoundingClientRect();
+    const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+
+    if (rect.top <= windowHeight && rect.bottom >= 0) {
+      imageContainer.classList.add('scrolled');
+    } else {
+      imageContainer.classList.remove('scrolled');
+    }
+  });
+});
+
+
+
+
+
