@@ -16,3 +16,20 @@ window.addEventListener('scroll', function() {
     imageContainer.classList.remove('scrolled');
   }
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+  const galleryItems = document.querySelectorAll('.gallery-item');
+
+  galleryItems.forEach(item => {
+    item.addEventListener('click', function() {
+      // Alternar la clase 'active' en el elemento clicado
+      this.classList.toggle('active');
+    });
+
+    // Remueve la clase 'active' cuando el mouse sale del elemento
+    item.addEventListener('mouseleave', function() {
+      this.classList.remove('active');
+    });
+  });
+});
+
