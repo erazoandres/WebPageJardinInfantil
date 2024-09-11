@@ -20,6 +20,7 @@ window.addEventListener('scroll', function() {
 
 document.addEventListener("DOMContentLoaded", function() {
   const galleryItems = document.querySelectorAll('.gallery-item');
+  
 
   galleryItems.forEach(item => {
     // Añade la clase 'active' al hacer clic
@@ -58,8 +59,10 @@ document.addEventListener('DOMContentLoaded', function() {
     updateCarousel();
   });
 
-  // Auto-play the carousel every 3 seconds
+  // Auto-play el carrusel cada 3 segundos
   setInterval(() => {
     nextButton.click();
-  }, 3000);
+  }, 7000);
 });
+
+

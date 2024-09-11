@@ -23,22 +23,28 @@
       margin: 0 auto;
       border-radius: 10px; /* Bordes redondeados para un aspecto moderno */
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+      height: 300px; /* Altura del carrusel */
     }
 
     .carousel {
       display: flex;
       transition: transform 0.5s ease-in-out;
+      height: 100%; /* Asegura que el carrusel ocupe toda la altura del contenedor */
     }
 
     .carousel-item {
       min-width: 100%;
       box-sizing: border-box;
+      height: 100%; /* Asegura que cada ítem ocupe toda la altura del carrusel */
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     .carousel-item img {
       width: 100%;
-      height: auto;
-      display: block;
+      height: 100%;
+      object-fit: cover; /* Ajusta la imagen para cubrir el contenedor sin deformarse */
       border-radius: 10px; /* Bordes redondeados para las imágenes */
     }
 
