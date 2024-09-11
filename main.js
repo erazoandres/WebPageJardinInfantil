@@ -34,3 +34,32 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
+
+document.addEventListener('DOMContentLoaded', function() {
+  const prevButton = document.querySelector('.carousel-prev');
+  const nextButton = document.querySelector('.carousel-next');
+  const carousel = document.querySelector('.carousel');
+  const items = document.querySelectorAll('.carousel-item');
+  const itemCount = items.length;
+  let index = 0;
+
+  function updateCarousel() {
+    const offset = -index * 100;
+    carousel.style.transform = `translateX(${offset}%)`;
+  }
+
+  nextButton.addEventListener('click', function() {
+    index = (index + 1) % itemCount;
+    updateCarousel();
+  });
+
+  prevButton.addEventListener('click', function() {
+    index = (index - 1 + itemCount) % itemCount;
+    updateCarousel();
+  });
+
+  // Auto-play the carousel every 3 seconds
+  setInterval(() => {
+    nextButton.click();
+  }, 3000);
+});
