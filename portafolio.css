@@ -1,68 +1,141 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-  }
-  
-  body {
-    background-color: #f9f9f9;
-    color: #333;
-  }
-  
-  .services-section {
-    padding: 80px 5%;
-    text-align: center;
-    background-color: #fff;
-  }
-  
-  .services-section h2 {
-    font-size: 2.5rem;
-    color: #22C1C3;
-    margin-bottom: 20px;
-  }
-  
-  .services-section p {
-    font-size: 1.2rem;
-    margin-bottom: 50px;
-    color: #666;
-  }
-  
-  .services-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    justify-items: center;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Estilos para la sección de servicios */
+.services-section {
+  padding: 50px 5%;
+  background-color: #f0f0f0;
+}
+
+.services-section h2 {
+  font-size: 2.5rem;
+  color: #22C1C3;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.services-section p {
+  font-size: 1.2rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Estilos del contenedor de servicios */
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Alinea los elementos con espacio entre ellos */
+  gap: 20px; /* Espacio entre las tarjetas */
+}
+
+/* Estilos para las tarjetas de servicio individuales */
+.service-card {
+  flex: 1 1 calc(25% - 20px); /* Ajusta el tamaño de cada tarjeta al 25% del contenedor con un margen */
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card img {
+  width: 80px; /* Tamaño fijo para los íconos */
+  margin-bottom: 20px;
+}
+
+.service-card h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Animación de hover para las tarjetas */
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Media query para ajustar el diseño en pantallas más pequeñas */
+@media (max-width: 1024px) {
   .service-card {
-    background-color: #fff;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1 1 calc(50% - 20px); /* Cada tarjeta ocupará el 50% del contenedor en pantallas medianas */
   }
-  
-  .service-card img {
-    width: 80px;
-    height: 80px;
-    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .service-card {
+    flex: 1 1 calc(100% - 20px); /* En pantallas pequeñas, las tarjetas ocuparán el 100% del contenedor */
   }
-  
-  .service-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: #22C1C3;
+}
+
+
+/* Estilos para la sección de misión */
+.mission-section {
+  padding: 50px 5%;
+  background-color: #9b9b9b8f;
+}
+
+.mission-content {
+  display: flex;
+  justify-content: space-between; /* Asegura que el texto y la imagen estén separados */
+  align-items: center; /* Alinea verticalmente el contenido */
+  gap: 30px;
+}
+
+.mission-image {
+  flex: 1;
+  max-width: 50%; /* Controla el tamaño de la imagen */
+}
+
+.mission-image img {
+  width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mission-text {
+  flex: 1;
+  max-width: 50%; /* Controla el tamaño del texto */
+}
+
+.mission-text h2 {
+  font-size: 2.5rem;
+  color: #22C1C3; /* Color azul-verde */
+  margin-bottom: 20px;
+}
+
+.mission-text p {
+  font-size: 1.2rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+  .mission-content {
+    flex-direction: column; /* En pantallas pequeñas, coloca la imagen y el texto uno debajo del otro */
   }
-  
-  .service-card p {
-    font-size: 1rem;
-    color: #666;
+
+  .mission-image,
+  .mission-text {
+    max-width: 100%; /* En pantallas pequeñas, ambos elementos ocuparán el ancho completo */
   }
-  
-  .service-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-  }
-  
+}
+

@@ -1,49 +1,72 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Servicios - Jardín Infantil</title>
-  <link rel="stylesheet" href="portafolio.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - Jardín Infantil</title>
+    <link rel="stylesheet" href="portafolio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Sección de Servicios -->
-  <section class="services-section">
+    <!-- Sección de Servicios -->
+    <section class="services-section">
     <h2>Nuestros Servicios</h2>
     <p>Ofrecemos una variedad de servicios diseñados para estimular el aprendizaje, la creatividad y el desarrollo integral de los niños.</p>
-    
+
     <div class="services-container">
-      <!-- Servicio 1 -->
-      <div class="service-card">
+        <!-- Servicio 1 -->
+        <div class="service-card">
         <img src="icono-educacion.png" alt="Educación Integral">
         <h3>Educación Integral</h3>
         <p>Programas educativos que fomentan el desarrollo cognitivo, social y emocional en un ambiente seguro y divertido.</p>
-      </div>
+        </div>
 
-      <!-- Servicio 2 -->
-      <div class="service-card">
+        <!-- Servicio 2 -->
+        <div class="service-card">
         <img src="icono-recreacion.png" alt="Recreación y Juegos">
         <h3>Recreación y Juegos</h3>
         <p>Actividades recreativas y juegos didácticos para estimular la creatividad, el trabajo en equipo y el desarrollo motor.</p>
-      </div>
+        </div>
 
-      <!-- Servicio 3 -->
-      <div class="service-card">
+        <!-- Servicio 3 -->
+        <div class="service-card">
         <img src="icono-alimentacion.png" alt="Alimentación Saludable">
         <h3>Alimentación Saludable</h3>
         <p>Menús balanceados y saludables diseñados para cubrir las necesidades nutricionales de los más pequeños.</p>
-      </div>
+        </div>
 
-      <!-- Servicio 4 -->
-      <div class="service-card">
+        <!-- Servicio 4 -->
+        <div class="service-card">
         <img src="icono-arte.png" alt="Actividades Artísticas">
         <h3>Actividades Artísticas</h3>
         <p>Talleres de arte, música y teatro que estimulan la creatividad y permiten a los niños expresarse libremente.</p>
-      </div>
+        </div>
     </div>
-  </section>
+    </section>
+
+    <!-- Nueva Sección de Misión -->
+    <section class="mission-section">
+        <div class="mission-content">
+        <div class="mission-image">
+            <img src="imagen-mision.jpg" alt="Misión del Jardín Infantil">
+        </div>
+        <div class="mission-text">
+            <h2>Nuestra Misión</h2>
+            <p>Nos dedicamos a proporcionar un ambiente de aprendizaje seguro y estimulante para el desarrollo integral de los niños, donde se fomente la creatividad, la independencia y el respeto mutuo.</p>
+        </div>
+        </div>
+    </section>
+
+
+  <!-- Script para ScrollReveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        // Inicializar el efecto ScrollReveal
+        ScrollReveal().reveal('.service-card', { interval: 200 });
+        ScrollReveal().reveal('.mission-text', { origin: 'left', distance: '100px', duration: 1000 });
+        ScrollReveal().reveal('.mission-image', { origin: 'right', distance: '100px', duration: 1000 });
+    </script>
 
 </body>
 </html>
