@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #22C1C3; /* Color azul-verde */
+  margin-bottom: 20px;
+}
+
+.parallax {
+  height: 100vh;
+  position: relative;
+  overflow: hidden; /* Oculta el contenido que se desborda */
+  perspective: 1px; /* Establece la perspectiva del parallax */
+  transform-style: preserve-3d; /* Permite la transformación 3D */
+}
+
+.video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translateZ(-1px) scale(2); /* Desplaza el video hacia atrás y lo escala para crear efecto parallax */
+  z-index: -1; /* Coloca el video detrás del contenido */
+}
+
+.overlay {
+  position: relative; /* Asegura que el texto y contenido de overlay estén delante del video */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #fff;
+  text-align: center;
+  z-index: 1; /* Asegura que el contenido de overlay esté delante del video */
+}
+
+.overlay h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  color: #FF0080; /* Color rosa vibrante */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra al texto */
+}
+
+.overlay p {
+  font-size: 1.5rem;
+}
+
+.gallery-section {
+  padding: 50px 5%;
+  background-color: #fff;
+}
+
+.gallery-section h2 {
+  font-size: 2.5rem;
+  color: #22C1C3; /* Títulos en color azul-verde */
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.5s ease;
+}
+
+.description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.5rem;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px); /* Efecto blur */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+}
+
+.gallery-item.active .description {
+  opacity: 1;
+}
+
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.gallery-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover::before {
+  opacity: 1;
+}
+
+.testimonials-section {
+  padding: 50px 5%;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.testimonials-section h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+.testimonial-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.testimonial-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+.testimonial-card h3 {
+  font-size: 1.5rem;
+  color: #22C1C3; /* Color azul-verde */
+  margin-bottom: 10px;
+}
+
+.testimonial-card p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.scroll-effect-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+.image-container {
+  width: 80%;
+  height: 80%;
+  overflow: hidden;
+  position: relative;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1);
+  transition: transform 1s ease;
+}
+
+.image-container.scrolled img {
+  transform: scale(1.1);
+}

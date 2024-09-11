@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page con Video y Parallax</title>
+  <link rel="stylesheet" href="nosotros.css">
+  <script src="main.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Sección de Parallax con Video -->
+  <section class="parallax">
+    <!-- Video en lugar de imagen de fondo -->
+    <video class="video-bg" autoplay muted loop>
+      <source src="video2.mp4" type="video/mp4">
+      Tu navegador no soporta el elemento de video.
+    </video>
+    <div class="overlay">
+      <h1>Bienvenidos a Mi Emprendimiento</h1>
+      <p>Productos reciclados con amor y creatividad</p>
+    </div>
+  </section>
+
+  <!-- Sección de Galería -->
+  <section class="gallery-section">
+    <h2>Nuestra Galería</h2>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="img1.jpg" alt="Imagen 1">
+        <div class="description">Descripción de la Imagen 1</div>
+      </div>
+      <div class="gallery-item">
+        <img src="img2.jpg" alt="Imagen 2">
+        <div class="description">Descripción de la Imagen 2</div>
+      </div>
+      <div class="gallery-item">
+        <img src="img3.jpg" alt="Imagen 3">
+        <div class="description">Descripción de la Imagen 3</div>
+      </div>
+      <div class="gallery-item">
+        <img src="img4.jpg" alt="Imagen 4">
+        <div class="description">Descripción de la Imagen 4</div>
+      </div>
+      <div class="gallery-item">
+        <img src="img5.jpg" alt="Imagen 5">
+        <div class="description">Descripción de la Imagen 5</div>
+      </div>
+      <div class="gallery-item">
+        <img src="img6.jpg" alt="Imagen 6">
+        <div class="description">Descripción de la Imagen 6</div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Sección de Testimonios -->
+  <section class="testimonials-section">
+    <h2>Testimonios de Clientes</h2>
+    <div class="testimonials">
+      <!-- Tarjeta 1 -->
+      <div class="testimonial-card">
+        <img src="circle.png" alt="Cliente 1">
+        <h3>Juan Pérez</h3>
+        <p>"Los productos son de excelente calidad, me encantan los candelabros y el diseño de las materas."</p>
+      </div>
+      <!-- Tarjeta 2 -->
+      <div class="testimonial-card">
+        <img src="circle.png" alt="Cliente 2">
+        <h3>María López</h3>
+        <p>"Una propuesta innovadora y sostenible. Me encanta apoyar este tipo de emprendimientos."</p>
+      </div>
+      <!-- Tarjeta 3 -->
+      <div class="testimonial-card">
+        <img src="circle.png" alt="Cliente 3">
+        <h3>Carlos Martínez</h3>
+        <p>"He comprado varias piezas para mi hogar y todas son únicas y están hechas con mucho detalle."</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección con Efecto al Hacer Scroll -->
+  <section class="scroll-effect-section">
+    <div class="image-container">
+      <img src="parallax-background.jpg" alt="Imagen con efecto">
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
