@@ -79,6 +79,7 @@ body {
   background-color: #f0f0f0;
 }
 
+
 .services-section h2 {
   font-size: 2.5rem;
   color: #22C1C3;
@@ -109,7 +110,7 @@ body {
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: background-color 0.5s ease; /* Transición gradual */
 }
 
 .service-card img {
@@ -121,11 +122,20 @@ body {
   font-size: 1.5rem;
   color: #333;
   margin-bottom: 10px;
+  transition: .3s ease;
+}
+
+.service-card:hover h3 {
+  color:white
 }
 
 .service-card p {
   font-size: 1rem;
   color: #666;
+}
+
+.service-card:hover {
+  background-color: #FF99C3   ;
 }
 
 /* Animación de hover para las tarjetas */
@@ -151,7 +161,7 @@ body {
 /* Estilos para la sección de misión */
 .mission-section {
   padding: 50px 5%;
-  background-color: #9b9b9b8f;
+  background-color: #FFD700 ;
 }
 
 .mission-content {
@@ -181,7 +191,7 @@ body {
 
 .mission-text h2 {
   font-size: 2.5rem;
-  color: #22C1C3; /* Color azul-verde */
+  color: #FF0080; /* Color azul-verde */
   margin-bottom: 20px;
 }
 
