@@ -77,7 +77,7 @@ body {
     display: flex;
     justify-content: right;
     align-items: center;
-    height: 100vh; /* Asegura que la sección ocupe toda la altura de la ventana */
+    height: 110vh; /* Asegura que la sección ocupe toda la altura de la ventana */
     
     position: relative; /* Permite posicionar elementos hijos correctamente */
   }
