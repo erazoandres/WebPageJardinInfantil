@@ -17,6 +17,7 @@ window.addEventListener('scroll', function() {
   }
 });
 
+<<<<<<< HEAD
 
 document.addEventListener("DOMContentLoaded", function() {
   const galleryItems = document.querySelectorAll('.gallery-item');
@@ -26,6 +27,15 @@ document.addEventListener("DOMContentLoaded", function() {
     // Añade la clase 'active' al hacer clic
     item.addEventListener('click', function() {
       this.classList.add('active');
+=======
+document.addEventListener("DOMContentLoaded", function() {
+  const galleryItems = document.querySelectorAll('.gallery-item');
+
+  galleryItems.forEach(item => {
+    item.addEventListener('click', function() {
+      // Alternar la clase 'active' en el elemento clicado
+      this.classList.toggle('active');
+>>>>>>> master
     });
 
     // Remueve la clase 'active' cuando el mouse sale del elemento
@@ -35,6 +45,7 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
+<<<<<<< HEAD
 
 document.addEventListener('DOMContentLoaded', function() {
   const prevButton = document.querySelector('.carousel-prev');
@@ -71,3 +82,5 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+=======
+>>>>>>> master
