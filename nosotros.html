@@ -7,7 +7,35 @@
   <link rel="stylesheet" href="nosotros.css">
   <script src="main.js"></script>
   <link rel="stylesheet" href="style_nav.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+          // Animación del texto desde la derecha hacia el centro
+          ScrollReveal().reveal('.introduction-text', {
+            origin: 'right',
+            distance: '200px',
+            duration: 1200,
+            easing: 'ease-in-out',
+            reset: true,
+          });
+
+          // Animación de la imagen desde la izquierda hacia el centro
+          ScrollReveal().reveal('.introduction-image', {
+            origin: 'left',
+            distance: '200px',
+            duration: 1200,
+            easing: 'ease-in-out',
+            reset: true,
+          });
+        });
+  </script>
+  
+  
+
 </head>
 <body>
   <header class="header">
@@ -40,7 +68,7 @@
       <div class="introduction-text">
         <h2>Bienvenidos al Jardín Infantil</h2>
         <p>
-          Nuestro jardín infantil ofrece un ambiente seguro y estimulante para que los más pequeños aprendan y crezcan. 
+          Nuestro jardín infantil ofrece un ambiente seguro y estimulante para que los más pequeños aprendan y crezcan.
           Contamos con un equipo de profesionales dedicados y programas educativos innovadores que fomentan el desarrollo integral de los niños.
         </p>
       </div>

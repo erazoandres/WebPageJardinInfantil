@@ -67,6 +67,26 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+//SCRIPT DE EFECTO
+document.addEventListener('DOMContentLoaded', function() {
+  // Animación del texto desde la derecha hacia el centro
+  ScrollReveal().reveal('.introduction-text', {
+    origin: 'right', // El texto viene desde la derecha
+    distance: '200px', // Distancia desde donde comienza el desplazamiento
+    duration: 1200, // Duración de la animación en milisegundos
+    easing: 'ease-in-out', // Suavizado de la animación
+    reset: true, // Vuelve a animarse si se vuelve a hacer scroll
+  });
+
+  // Animación de la imagen desde la izquierda hacia el centro
+  ScrollReveal().reveal('.introduction-image', {
+    origin: 'left', // La imagen viene desde la izquierda
+    distance: '200px',
+    duration: 1200,
+    easing: 'ease-in-out',
+    reset: true,
+  });
+});
 
 
 
