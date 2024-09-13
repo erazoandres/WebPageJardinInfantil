@@ -14,21 +14,6 @@
     
   }
   
-  /* Estilos generales */
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  body {
-    margin: 0;
-   
-    font-size: 16px;
-    line-height: 1.6;
-    background-color: #f4f4f9;
-  }
   
   .header {
     position: fixed;
