@@ -497,11 +497,13 @@ h1, h2 {
 }
 
 .introduction-text h2 {
+  text-align: center;
   font-size: 2em;
 }
 
 .introduction-text p {
   font-size: 1.2em;
+  text-align: justify;
 }
 
 .introduction-image img {
