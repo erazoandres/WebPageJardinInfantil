@@ -2,12 +2,24 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
     background-color: #f5f5f5;
     color: #333;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #f4f4f9; /* Fondo claro para contraste */
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase; /* Hace que el logo sea más impactante */
+    letter-spacing: 2px; /* Espaciado entre letras */
 }
 
 
