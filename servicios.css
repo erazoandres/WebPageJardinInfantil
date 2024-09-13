@@ -123,6 +123,11 @@ body {
   margin-top: 50px;
   padding: 50px 5%;
   background-color: #f0f0f0;
+  background-image: url("images/fondo-web3.png"); /* Ruta a tu imagen */
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el área */
+  background-position: center top; /* Centra la imagen*/
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+   
 }
 
 .services-section h2 {

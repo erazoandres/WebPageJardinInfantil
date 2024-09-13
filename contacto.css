@@ -3,21 +3,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif; /* Usa una fuente más moderna */
-}
-
-body {
-  margin: 0;
-  font-size: 16px;
-  line-height: 1.6;
-  background-color: #f4f4f9; /* Fondo claro para contraste */
-}
-
-/* Estilos generales */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -26,7 +11,7 @@ body {
   padding-top: 60px; /* Agrega un relleno para compensar la altura de la barra de navegación */
   font-size: 16px;
   line-height: 1.6;
-  background-color: #f4f4f9;
+  overflow: hidden;
 }
 
 .header {
@@ -48,6 +33,7 @@ body {
   transition: background 0.3s ease;
 }
 
+
 .logo a {
   font-size: 1.8em;
   font-weight: bold;
@@ -60,6 +46,7 @@ body {
 .nav-links {
   list-style: none;
   display: flex;
+  transform: translateX(-20px); /* Ajusta el valor según lo necesario */
 }
 
 .nav-links li {
@@ -118,82 +105,83 @@ body {
 
   
 .contact-section {
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    height: 110vh; /* Asegura que la sección ocupe toda la altura de la ventana */
-    
-    position: relative; /* Permite posicionar elementos hijos correctamente */
-  }
-  
-  .contact-container {
-    max-width: 500px;
-    width: 100%;
-    padding: 20px;
-    position: relative; /* Asegura que el contenedor se posicione correctamente sobre el fondo */
-  }
-  
-  .contact-form {
-    background: rgba(255, 255, 255, 0.8); /* Fondo blanco con opacidad */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    max-width: 320px;
-  }
+  display: flex;
+  justify-content: center; /* Centra el formulario horizontalmente */
+  align-items: center;
+  height: 100vh; /* Asegura que la sección ocupe toda la altura de la ventana */
+  margin-bottom: 10px;
 
-  .contact-form:hover{
+}
 
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.8); /* Aumentar sombra al pasar el cursor */
-    
-  }
-  
-  .contact-form h3 {
-    margin-bottom: 20px;
-    font-size: 24px;
-    color: #333;
-    text-align: center;
-  }
-  
-  .contact-form .form-group {
-    margin-bottom: 15px;
-  }
-  
-  .contact-form label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-  }
-  
-  .contact-form input,
-  .contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    border-radius: 4px;
-    border: 1px solid #ddd;
-    box-sizing: border-box;
-    font-size: 14px;
-  }
-  
-  .contact-form textarea {
-    height: 100px;
-    resize: vertical; /* Permitir redimensionar verticalmente */
-  }
-  
-  .contact-form button {
-    background-color: #22C1C3;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 14px;
-    width: 100%;
-  }
-  
-  .contact-form button:hover {
-    background-color: #1a9a9a;
-    
-  }
+.contact-container {
+  max-width: 400px; /* Reduce el ancho máximo del contenedor */
+  width: 100%;
+  padding: 15px; /* Reduce el padding del contenedor */
+  position: relative;
+}
+
+.contact-form {
+  background: rgba(255, 255, 255, 0.9); /* Fondo blanco con menos opacidad */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra más sutil */
+  padding: 15px; /* Reduce el padding interno del formulario */
+  max-width: 100%; /* Asegura que el formulario no exceda el contenedor */
+}
+
+.contact-form:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Aumenta la sombra al pasar el cursor */
+}
+
+.contact-form h3 {
+  margin-bottom: 15px; /* Reduce el margen inferior */
+  font-size: 20px; /* Reduce el tamaño de la fuente del encabezado */
+  color: #333;
+  text-align: center;
+}
+
+.contact-form .form-group {
+  margin-bottom: 10px; /* Reduce el margen inferior de cada grupo */
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 4px; /* Reduce el margen inferior del label */
+  font-weight: 600;
+  color: #555;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: calc(100% - 20px); /* Ajusta el ancho considerando el padding */
+  padding: 8px; /* Reduce el padding interno */
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  font-size: 14px; /* Ajusta el tamaño de la fuente */
+}
+
+.contact-form textarea {
+  height: 80px; /* Reduce la altura del textarea */
+  resize: vertical; /* Permite redimensionar verticalmente */
+}
+
+.contact-form button {
+  background-color: #22C1C3;
+  color: white;
+  border: none;
+  padding: 8px; /* Reduce el padding del botón */
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  width: 100%;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Suaviza la transición del color y el transform */
+}
+
+.contact-form button:hover {
+  background-color: #1a9a9a;
+  transform: translateY(-2px); /* Ligero efecto de elevación */
+}
+
 
   /* Fondo de video */
 .video-background {
