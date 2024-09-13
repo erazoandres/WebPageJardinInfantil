@@ -65,3 +65,26 @@ document.addEventListener('DOMContentLoaded', function() {
   }, 7000);
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+  const form = document.querySelector('.contact-form form');
+  const modal = document.getElementById('success-modal');
+  const closeButton = document.querySelector('.close-button');
+
+  form.addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevenir el envío real del formulario (para demostración)
+
+    // Aquí podrías agregar la lógica para enviar el formulario a un servidor, si es necesario
+
+    modal.style.display = 'block'; // Mostrar el modal
+  });
+
+  closeButton.addEventListener('click', function() {
+    modal.style.display = 'none'; // Ocultar el modal cuando se hace clic en el botón de cerrar
+  });
+
+  window.addEventListener('click', function(event) {
+    if (event.target === modal) {
+      modal.style.display = 'none'; // Ocultar el modal cuando se hace clic fuera del modal
+    }
+  });
+});

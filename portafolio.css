@@ -79,7 +79,6 @@ body {
   background-color: #f0f0f0;
 }
 
-
 .services-section h2 {
   font-size: 2.5rem;
   color: #22C1C3;
@@ -110,40 +109,59 @@ body {
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
-  transition: background-color 0.5s ease; /* Transición gradual */
+  transition: background-color 0.5s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones */
 }
 
+/* Estilo de los íconos dentro de las tarjetas */
 .service-card img {
   width: 80px; /* Tamaño fijo para los íconos */
   margin-bottom: 20px;
+  transition: transform 0.3s ease; /* Transición para transformaciones */
+}
+
+/* Animación de hover para los íconos */
+@keyframes iconBounce {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+/* Estilos cuando se hace hover sobre la tarjeta */
+.service-card:hover {
+  background-color: #FF99C3;
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Efecto de animación para los íconos cuando se hace hover sobre la tarjeta */
+.service-card:hover img {
+  animation: iconBounce 0.6s ease-in-out; /* Aplica la animación de rebote al hacer hover */
 }
 
 .service-card h3 {
   font-size: 1.5rem;
   color: #333;
   margin-bottom: 10px;
-  transition: .3s ease;
+  transition: color 0.3s ease;
 }
 
 .service-card:hover h3 {
-  color:white
+  color: white;
 }
 
 .service-card p {
   font-size: 1rem;
   color: #666;
+  transition: font-weight 0.3s ease;
 }
 
 .service-card:hover p {
   font-weight: bold;
 }
 
-/* Animación de hover para las tarjetas */
-.service-card:hover {
-  background-color: #FF99C3   ;
-  transform: translateY(-10px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
 
 /* Media query para ajustar el diseño en pantallas más pequeñas */
 @media (max-width: 1024px) {
@@ -224,7 +242,7 @@ body {
 }
 
 .image-container {
-  width: 95%; /* Aumenta el ancho al 95% del contenedor */
+  width: 100%; /* Aumenta el ancho al 95% del contenedor */
   height: 70%; /* Ajusta la altura para mantener proporción más grande */
   overflow: hidden;
   position: relative;
@@ -235,7 +253,7 @@ body {
   height: 100%;
   object-fit: cover;
   transform: scale(1);
-  transition: transform 1s ease;
+  transition: transform 3s ease-in-out;
 }
 
 .image-container.scrolled img {
@@ -262,3 +280,5 @@ body {
     transform: translate(0, 0); /* Regresa a la posición original */
   }
 }
+
+

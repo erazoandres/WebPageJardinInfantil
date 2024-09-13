@@ -419,7 +419,11 @@ h1, h2 {
 };
 
 .introduction-section {
-  padding: 100px 0; /* Espaciado superior e inferior */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: auto; /* Cambiado a auto para permitir que el contenido fluya correctamente */
+  padding: 50px 10%; /* Reduce el espaciado en pantallas más pequeñas */
   background-color: #f7f7f7;
 }
 
@@ -429,7 +433,7 @@ h1, h2 {
   justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px 20px; /* Espacio lateral */
+  padding: 20px 20px;
 }
 
 .introduction-text {
@@ -437,12 +441,6 @@ h1, h2 {
   padding-right: 40px;
   text-align: left;
 }
-
-.introduction-text h2 {
-  font-size: 2em;
-}
-
-
 
 .introduction-image {
   flex: 1;
@@ -454,31 +452,79 @@ h1, h2 {
   max-width: 40%;
 }
 
-.introduction-section {
-  display: flex;
-  justify-content: space-between; /* Asegura que el texto y la imagen estén en extremos */
-  align-items: center;
-  height: 100vh;
-  padding: 0 10%; /* Deja un espacio alrededor del contenido */
-}
-
-.introduction-text, .introduction-image {
-  max-width: 40%;
-}
 .introduction-text h2 {
   font-size: 2em;
 }
+
 .introduction-text p {
   font-size: 1.2em;
 }
+
 .introduction-image img {
   width: 100%;
   height: auto;
 }
 
+/* Media query para pantallas medianas (hasta 992px) */
 @media (max-width: 992px) {
+  .introduction-section {
+    padding: 40px 5%; /* Reduce el padding lateral */
+  }
+
   .introduction-content {
-    flex-direction: column;
+    flex-direction: column; /* Cambia la dirección del contenido a columna */
     text-align: center;
+  }
+
+  .introduction-text, .introduction-image {
+    max-width: 100%; /* Asegura que el texto y la imagen ocupen el 100% del ancho en pantallas más pequeñas */
+  }
+
+  .introduction-text {
+    padding-right: 0; /* Elimina el padding lateral en pantallas pequeñas */
+    margin-bottom: 20px; /* Añade espacio entre el texto y la imagen */
+  }
+
+  .introduction-text h2 {
+    font-size: 1.8em; /* Ajusta el tamaño del título */
+  }
+
+  .introduction-text p {
+    font-size: 1.1em; /* Ajusta el tamaño del párrafo */
+  }
+}
+
+/* Media query para pantallas pequeñas (hasta 768px) */
+@media (max-width: 768px) {
+  .introduction-section {
+    padding: 30px 5%; /* Reduce aún más el padding lateral */
+  }
+
+  .introduction-text h2 {
+    font-size: 1.6em; /* Ajusta el tamaño del título */
+  }
+
+  .introduction-text p {
+    font-size: 1em; /* Ajusta el tamaño del párrafo */
+  }
+
+  .introduction-image img {
+    width: 100%; /* Asegura que la imagen ocupe el ancho completo en pantallas pequeñas */
+    height: auto; /* Mantiene la proporción correcta */
+  }
+}
+
+/* Media query para pantallas muy pequeñas (hasta 480px) */
+@media (max-width: 480px) {
+  .introduction-section {
+    padding: 20px 2%; /* Aún menos padding lateral en pantallas muy pequeñas */
+  }
+
+  .introduction-text h2 {
+    font-size: 1.4em; /* Ajusta el tamaño del título */
+  }
+
+  .introduction-text p {
+    font-size: 0.9em; /* Ajusta el tamaño del párrafo */
   }
 }
