@@ -13,8 +13,24 @@ body {
   background-color: #f4f4f9; /* Fondo claro para contraste */
 }
 
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding-top: 60px; /* Agrega un relleno para compensar la altura de la barra de navegación */
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: #f4f4f9;
+}
+
 .header {
-  position: fixed; /* Fija la cabecera para que siempre esté visible */
+  position: fixed;
   top: 0;
   width: 100%;
   z-index: 10;
@@ -24,20 +40,21 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  backdrop-filter: blur(10px); /* Reduce el blur para más claridad */
-  background: rgba(34, 193, 195, 0.8); /* Fondo con color más opaco */
+  backdrop-filter: blur(10px);
+  background: rgba(34, 193, 195, 0.8);
   border-bottom: 1px solid rgba(34, 193, 195, 0.4);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra más suave */
-  padding: 15px 30px; /* Espaciado más amplio */
-  transition: background 0.3s ease; /* Transición suave para cambios */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px 30px;
+  transition: background 0.3s ease;
 }
 
-.logo {
+.logo a {
   font-size: 1.8em;
   font-weight: bold;
   color: #fff;
-  text-transform: uppercase; /* Hace que el logo sea más impactante */
-  letter-spacing: 2px; /* Espaciado entre letras */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-decoration: none;
 }
 
 .nav-links {
@@ -55,22 +72,51 @@ body {
   font-weight: 600;
   font-size: 1.1rem;
   padding: 10px 20px;
-  border-radius: 50px; /* Bordes redondeados para un estilo más amigable */
+  border-radius: 50px;
   background-color: transparent;
   transition: all 0.3s ease;
 }
 
 .nav-links a:hover {
-  background-color: rgba(255, 255, 255, 0.2); /* Fondo al pasar el cursor */
+  background-color: rgba(255, 255, 255, 0.2);
   color: #fff;
-  transform: scale(1.05); /* Efecto de zoom suave */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra al hacer hover */
+  transform: scale(1.05);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.navbar.scrolled {
-  background: rgba(34, 193, 195, 1); /* Cambia el fondo al hacer scroll */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Sombra más marcada */
+/* Estilos responsivos */
+.menu-toggle {
+  display: none; /* Oculta el botón de menú hamburguesa por defecto */
+  cursor: pointer;
+  font-size: 1.8rem;
+  color: #fff;
 }
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* Oculta el menú en pantallas pequeñas */
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: rgba(34, 193, 195, 0.9);
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    z-index: 9; /* Asegura que el menú se muestre sobre el contenido */
+  }
+
+  .nav-links.show {
+    display: flex; /* Muestra el menú cuando la clase 'show' está presente */
+  }
+
+  .menu-toggle {
+    display: block; /* Muestra el botón de menú hamburguesa en pantallas pequeñas */
+  }
+}
+
+
 
 /* Estilos para la sección de servicios */
 .services-section {
@@ -280,5 +326,3 @@ body {
     transform: translate(0, 0); /* Regresa a la posición original */
   }
 }
-
-

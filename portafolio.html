@@ -14,16 +14,20 @@
 
   <header class="header">
     <nav class="navbar">
-      <div class="logo" style="text-decoration: none;"> <a href="home.html">MiSitio</a></div>
-        <ul class="nav-links">
-            <li><a href="nosotros.html">Nosotros</a></li>
-            <li><a href="portafolio.html">Servicios</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
+      <div class="logo">
+        <a href="home.html">MiSitio</a>
+      </div>
+      <div class="menu-toggle" id="mobile-menu">&#9776;</div> <!-- Botón de menú hamburguesa -->
+      <ul class="nav-links" id="nav-links">
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="portafolio.html">Servicios</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
     </nav>
   </header>
-
-
+  
+  
+  
   <!-- Sección de Servicios -->
   <section class="services-section">
     <h2>Nuestros Servicios</h2>
@@ -106,22 +110,22 @@
         ScrollReveal().reveal('.mission-image', { origin: 'right', distance: '100px', duration: 1000 });
     </script>
 
+    <script>
+      document.getElementById('mobile-menu').addEventListener('click', function() {
+        const navLinks = document.querySelector('.nav-links');
+        const menuToggle = document.getElementById('mobile-menu');
+
+        navLinks.classList.toggle('show');
+
+        // Cambia el ícono de hamburguesa por una "X" cuando el menú esté abierto
+        if (navLinks.classList.contains('show')) {
+          menuToggle.innerHTML = '&#10005;'; // Cambia a "X" (✖)
+        } else {
+          menuToggle.innerHTML = '&#9776;'; // Cambia a hamburguesa (☰)
+        }
+      });
+    </script>
+
 </body>
 </html>
 
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-  const imageContainer = document.querySelector('.image-container');
-
-  window.addEventListener('scroll', function() {
-    const rect = imageContainer.getBoundingClientRect();
-    const windowHeight = window.innerHeight || document.documentElement.clientHeight;
-
-    if (rect.top <= windowHeight && rect.bottom >= 0) {
-      imageContainer.classList.add('scrolled');
-    } else {
-      imageContainer.classList.remove('scrolled');
-    }
-  });
-});
-</script>
