@@ -134,12 +134,13 @@ body {
   color: #666;
 }
 
-.service-card:hover {
-  background-color: #FF99C3   ;
+.service-card:hover p {
+  font-weight: bold;
 }
 
 /* Animación de hover para las tarjetas */
 .service-card:hover {
+  background-color: #FF99C3   ;
   transform: translateY(-10px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
@@ -161,7 +162,7 @@ body {
 /* Estilos para la sección de misión */
 .mission-section {
   padding: 50px 5%;
-  background-color: #FFD700 ;
+  background-color: #B8E2D8 ;
 }
 
 .mission-content {

@@ -2,75 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {
-    margin: 0;
-    font-size: 16px;
-    line-height: 1.6;
-    background-color: #f4f4f9; /* Fondo claro para contraste */
-  }
-  
+    background-color: #f5f5f5;
+    color: #333;
+}
 
-  .header {
-    position: fixed; /* Fija la cabecera para que siempre esté visible */
-    top: 0;
-    width: 100%;
-    z-index: 10;
-  }
-  
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    backdrop-filter: blur(10px); /* Reduce el blur para más claridad */
-    background: rgba(34, 193, 195, 0.8); /* Fondo con color más opaco */
-    border-bottom: 1px solid rgba(34, 193, 195, 0.4);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra más suave */
-    padding: 15px 30px; /* Espaciado más amplio */
-    transition: background 0.3s ease; /* Transición suave para cambios */
-  }
-  
-  .logo {
-    font-size: 1.8em;
-    font-weight: bold;
-    color: #fff;
-    text-transform: uppercase; /* Hace que el logo sea más impactante */
-    letter-spacing: 2px; /* Espaciado entre letras */
-  }
-  
-  .nav-links {
-    list-style: none;
-    display: flex;
-  }
-  
-  .nav-links li {
-    margin-left: 25px;
-  }
-  
-  .nav-links a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: 600;
-    font-size: 1.1rem;
-    padding: 10px 20px;
-    border-radius: 50px; /* Bordes redondeados para un estilo más amigable */
-    background-color: transparent;
-    transition: all 0.3s ease;
-  }
-  
-  .nav-links a:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Fondo al pasar el cursor */
-    color: #fff;
-    transform: scale(1.05); /* Efecto de zoom suave */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra al hacer hover */
-  }
-  
-  .navbar.scrolled {
-    background: rgba(34, 193, 195, 1); /* Cambia el fondo al hacer scroll */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Sombra más marcada */
-  }
 
 .hero {
     position: relative;
@@ -82,6 +21,7 @@ body {
     background-color: #F5F5F5;
     padding-top: 80px;
 }
+
 
 .hero-content {
     position: absolute;
@@ -105,6 +45,37 @@ body {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra al texto */
 
 }
+
+.content-section {
+    position: relative; /* Para que el icono se posicione respecto a esta sección */
+    padding: 20px;
+  }
+  
+  .floating-icon {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    animation: floating 3s ease-in-out infinite; /* Añade la animación de flotación */
+  }
+  
+  .floating-icon img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Definición de la animación */
+  @keyframes floating {
+    0%, 100% {
+      transform: translateY(0); /* Posición inicial */
+    }
+    50% {
+      transform: translateY(-10px); /* Subir 10px */
+    }
+  }
+  
 
 .cta-button {
     display: inline-block;
@@ -157,5 +128,4 @@ body {
     color: #fff;
     text-align: center;
     padding: 10px;
-   
 }
