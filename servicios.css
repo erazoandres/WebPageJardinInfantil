@@ -123,7 +123,7 @@ body {
   margin-top: 50px;
   padding: 50px 5%;
   background-color: #f0f0f0;
-  background-image: url("images/fondo-web3.png"); /* Ruta a tu imagen */
+  background-image: url("images/fondo-web3.png");
   background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el área */
   background-position: center top; /* Centra la imagen*/
   background-repeat: no-repeat; /* Evita que la imagen se repita */
@@ -186,6 +186,27 @@ body {
   transform: translateY(-10px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
+
+.service-card:nth-child(1):hover {
+  background-color: #b283f0;
+}
+
+.service-card:nth-child(2):hover {
+  background-color: #2bf0f7;
+}
+
+.service-card:nth-child(3):hover {
+  background-color: #cf5252;
+}
+
+.service-card:nth-child(4):hover {
+  background-color: #73ff00;
+}
+
+.service-card:nth-child(5):hover {
+  background-color: #ffee00ea;
+}
+
 
 /* Efecto de animación para los íconos cuando se hace hover sobre la tarjeta */
 .service-card:hover img {
