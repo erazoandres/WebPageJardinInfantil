@@ -132,6 +132,7 @@ body {
 
 .services-section h2 {
   font-size: 2.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Sombra negra ligera */
   color: #22C1C3;
   text-align: center;
   margin-bottom: 20px;
@@ -154,6 +155,7 @@ body {
 
 /* Estilos para las tarjetas de servicio individuales */
 .service-card {
+  cursor: default;
   flex: 1 1 calc(25% - 20px); /* Ajusta el tamaño de cada tarjeta al 25% del contenedor con un margen */
   background-color: #fff;
   border-radius: 10px;
@@ -252,7 +254,7 @@ body {
 /* Estilos para la sección de misión */
 .mission-section {
   padding: 50px 5%;
-  background-color: #B8E2D8 ;
+  background-color: #D8BFD8 ;
 }
 
 .mission-content {
@@ -284,6 +286,9 @@ body {
   font-size: 2.5rem;
   color: #FF0080; /* Color azul-verde */
   margin-bottom: 20px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Sombra negra ligera */
+
 }
 
 .mission-text p {
@@ -313,25 +318,6 @@ body {
   background-color: #f0f0f0;
 }
 
-.image-container {
-  width: 100%; /* Aumenta el ancho al 95% del contenedor */
-  height: 70%; /* Ajusta la altura para mantener proporción más grande */
-  overflow: hidden;
-  position: relative;
-}
-
-.image-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transform: scale(1);
-  transition: transform 3s ease-in-out;
-}
-
-.image-container.scrolled img {
-  transform: scale(1.1);
-}
-
 
 
 /* Animación de flotación y balanceo */
@@ -356,7 +342,7 @@ body {
 
 /* styles.css */
 .scroll-effect-section {
-  height: 500px; /* Ajusta según tus necesidades */
+  height: 280px; /* Ajusta según tus necesidades */
   display: flex;
   align-items: center;
   justify-content: center;
