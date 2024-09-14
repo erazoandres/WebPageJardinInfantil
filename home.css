@@ -33,41 +33,39 @@
     padding: 15px 30px;
     transition: background 0.3s ease;
   }
-  
   .logo a {
-    font-size: 1.8em;
-    font-weight: bold;
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    text-decoration: none;
+    display: flex;
+    align-items: center; /* Alinea verticalmente el logo */
+  }
+  
+  .logo img {
+    height: 50px; /* Ajusta la altura del logo según tus necesidades */
+    width: auto; /* Mantiene la proporción del logo */
+    border: none; /* Elimina cualquier borde */
   }
   
   .nav-links {
-    list-style: none;
-    display: flex;
+    list-style: none; /* Elimina los puntos de la lista */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Muestra los enlaces en línea */
+    gap: 20px; /* Espacio entre los enlaces */
   }
   
   .nav-links li {
-    margin-left: 25px;
+    display: inline;
   }
   
   .nav-links a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: 600;
-    font-size: 1.1rem;
-    padding: 10px 20px;
-    border-radius: 50px;
-    background-color: transparent;
-    transition: all 0.3s ease;
+    color: #fff; /* Color del texto de los enlaces */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    font-size: 16px; /* Tamaño de fuente de los enlaces */
+    padding: 10px; /* Espacio alrededor del texto */
+    transition: color 0.3s ease; /* Transición suave para el color */
   }
   
   .nav-links a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    color: #fff;
-    transform: scale(1.05);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #22C1C3; /* Color de los enlaces al pasar el ratón */
   }
   
   /* Estilos responsivos */
