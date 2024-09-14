@@ -5,17 +5,28 @@ document.querySelectorAll('.gallery-item').forEach(item => {
     });
   });
   
-window.addEventListener('scroll', function() {
-  const imageContainer = document.querySelector('.image-container');
-  const rect = imageContainer.getBoundingClientRect();
-  const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+  let ticking = false;
 
-  if (rect.top <= windowHeight && rect.bottom >= 0) {
-    imageContainer.classList.add('scrolled');
-  } else {
-    imageContainer.classList.remove('scrolled');
-  }
-});
+  window.addEventListener('scroll', function() {
+    if (!ticking) {
+      window.requestAnimationFrame(function() {
+        const imageContainer = document.querySelector('.image-container');
+        const rect = imageContainer.getBoundingClientRect();
+        const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+  
+        if (rect.top <= windowHeight && rect.bottom >= 50) {
+          imageContainer.classList.add('scrolled');
+        } else {
+          imageContainer.classList.remove('scrolled');
+        }
+  
+        ticking = false;
+      });
+  
+      ticking = true;
+    }
+  });
+  
 
 
 document.addEventListener("DOMContentLoaded", function() {

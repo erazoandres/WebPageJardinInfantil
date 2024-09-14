@@ -103,84 +103,125 @@ body {
   }
 }
 
-  
-.contact-section {
-  display: flex;
-  justify-content: center; /* Centra el formulario horizontalmente */
-  align-items: center;
-  height: 100vh; /* Asegura que la sección ocupe toda la altura de la ventana */
-  margin-bottom: 10px;
 
-}
-
+/* Estilos para la sección de contacto */
 .contact-container {
-  max-width: 400px; /* Reduce el ancho máximo del contenedor */
-  width: 100%;
-  padding: 15px; /* Reduce el padding del contenedor */
-  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px; /* Espacio entre las columnas */
+  padding: 20px;  
 }
 
 .contact-form {
-  background: rgba(255, 255, 255, 0.9); /* Fondo blanco con menos opacidad */
-  border-radius: 8px;
+  flex: 1 1 100%;
+  max-width: 500px; /* Máximo ancho del formulario */
+  padding: 15px; /* Espacio interno más compacto */
+  background: #f9f9f9; /* Fondo gris claro para un look moderno */
+  border-radius: 8px; /* Bordes redondeados */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra más sutil */
-  padding: 15px; /* Reduce el padding interno del formulario */
-  max-width: 100%; /* Asegura que el formulario no exceda el contenedor */
-}
-
-.contact-form:hover {
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Aumenta la sombra al pasar el cursor */
 }
 
 .contact-form h3 {
-  margin-bottom: 15px; /* Reduce el margen inferior */
-  font-size: 20px; /* Reduce el tamaño de la fuente del encabezado */
-  color: #333;
-  text-align: center;
+  margin-bottom: 15px;
+  font-size: 1.5rem; /* Tamaño de fuente ajustado */
+  color: #333; /* Color de texto oscuro */
 }
 
 .contact-form .form-group {
-  margin-bottom: 10px; /* Reduce el margen inferior de cada grupo */
+  margin-bottom: 12px; /* Espacio entre grupos reducido */
 }
 
 .contact-form label {
   display: block;
-  margin-bottom: 4px; /* Reduce el margen inferior del label */
-  font-weight: 600;
-  color: #555;
+  margin-bottom: 4px; /* Espacio reducido entre etiqueta y campo */
+  font-weight: 500;
+  color: #666;
 }
 
 .contact-form input,
 .contact-form textarea {
-  width: calc(100% - 20px); /* Ajusta el ancho considerando el padding */
-  padding: 8px; /* Reduce el padding interno */
-  border-radius: 4px;
-  border: 1px solid #ddd;
-  box-sizing: border-box;
-  font-size: 14px; /* Ajusta el tamaño de la fuente */
+  width: 100%;
+  padding: 10px; /* Espacio interno reducido */
+  border-radius: 6px; /* Bordes redondeados */
+  border: 1px solid #ccc; /* Borde sutil */
+  font-size: 14px; /* Tamaño de fuente ajustado */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Transiciones suaves */
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #22C1C3; /* Color de borde en foco */
+  box-shadow: 0 0 6px rgba(34, 193, 195, 0.3); /* Sombra de foco */
 }
 
 .contact-form textarea {
-  height: 80px; /* Reduce la altura del textarea */
-  resize: vertical; /* Permite redimensionar verticalmente */
+  height: 80px; /* Altura ajustada */
+  resize: vertical;
 }
 
 .contact-form button {
   background-color: #22C1C3;
-  color: white;
+  color: #fff;
   border: none;
-  padding: 8px; /* Reduce el padding del botón */
-  border-radius: 4px;
+  padding: 10px; /* Espacio interno reducido */
+  border-radius: 6px; /* Bordes redondeados */
   cursor: pointer;
-  font-size: 14px;
+  font-size: 15px; /* Tamaño de fuente ajustado */
   width: 100%;
-  transition: background-color 0.3s ease, transform 0.2s ease; /* Suaviza la transición del color y el transform */
+  transition: background-color 0.3s, transform 0.2s; /* Transiciones suaves */
 }
 
 .contact-form button:hover {
   background-color: #1a9a9a;
-  transform: translateY(-2px); /* Ligero efecto de elevación */
+  transform: translateY(-2px);
 }
+
+/* Estilos para la información de contacto y el mapa */
+.contact-info {
+  flex: 1 1 100%;
+  max-width: 500px; /* Máximo ancho del contenedor de información */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-details,
+.map-container {
+  background: #f9f9f9; /* Fondo gris claro para un look moderno */
+  border-radius: 8px; /* Bordes redondeados */
+  padding: 15px; /* Espacio interno reducido */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra más sutil */
+}
+
+.contact-details h3,
+.map-container h3 {
+  margin-bottom: 10px; /* Espacio reducido para los encabezados */
+  font-size: 1.4rem; /* Tamaño de fuente ajustado */
+  color: #333; /* Color de texto oscuro */
+}
+
+.contact-details p {
+  font-size: 14px; /* Tamaño de fuente ajustado */
+  margin-bottom: 8px; /* Espacio reducido entre párrafos */
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 250px; /* Altura ajustada */
+  border: 0;
+  border-radius: 8px; /* Bordes redondeados */
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 768px) {
+  .contact-form,
+  .contact-info {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
 
 
   /* Fondo de video */
