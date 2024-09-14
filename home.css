@@ -102,6 +102,58 @@
     }
   }
 
+  /* Estilos generales para los botones flotantes */
+.floating-icon {
+  position: fixed; /* Hace que los íconos floten en la pantalla */
+  bottom: 20px; /* Ajusta la distancia desde la parte inferior de la pantalla */
+  z-index: 1000; /* Asegura que los íconos estén por encima de otros elementos */
+  width: 50px; /* Tamaño del icono */
+  height: 50px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efectos de transición para animaciones */
+  animation: float 3s ease-in-out infinite; /* Añade la animación de flotación */
+}
+
+/* Asegura que los iconos tengan borde redondeado y sombras coherentes */
+.floating-icon img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%; /* Hace que el icono sea circular */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Añade una sombra suave */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff; /* Evita que el fondo sea transparente */
+}
+
+/* Efecto hover para ambos botones */
+.floating-icon:hover img {
+  transform: scale(1.1); /* Agranda el icono al pasar el ratón */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Incrementa la sombra al hacer hover */
+}
+
+/* Botón flotante de Instagram (el primero) */
+.floating-icon:first-child {
+  right: 20px; /* Posición del icono en la esquina inferior derecha */
+}
+
+/* Botón flotante de WhatsApp (el segundo) */
+.floating-icon:nth-child(2) {
+  right: 80px; /* Ajusta para que el botón esté a 20px de distancia del de Instagram */
+}
+
+/* Animación de flotación */
+@keyframes float {
+  0%, 100% {
+      transform: translateY(0); /* Posición inicial */
+  }
+  50% {
+      transform: translateY(-10px); /* Sube 10px */
+  }
+}
+
+
+  
+
+
+
 
 .hero {
     position: relative;
@@ -143,20 +195,7 @@
     padding: 20px;
   }
   
-  .floating-icon {
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-    animation: floating 3s ease-in-out infinite; /* Añade la animación de flotación */
-  }
   
-  .floating-icon img {
-    width: 100%;
-    height: auto;
-  }
   
   /* Definición de la animación */
   @keyframes floating {
