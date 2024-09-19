@@ -114,7 +114,7 @@ body {
   max-width: 300px; /* Máximo ancho del formulario */
   padding: 15px; /* Espacio interno más compacto */
   background: #f9f9f9; /* Fondo gris claro para un look moderno */
-  border-radius: 8px; /* Bordes redondeados */
+  
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra más sutil */
 }
 
@@ -185,7 +185,7 @@ body {
 .contact-details,
 .map-container {
   background: #f9f9f9; /* Fondo gris claro para un look moderno */
-  border-radius: 8px; /* Bordes redondeados */
+
   padding: 15px; /* Espacio interno reducido */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra más sutil */
 }
