@@ -291,11 +291,12 @@ body {
   color: #FF0080; /* Color azul-verde */
   margin-bottom: 20px;
   color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Sombra negra ligera */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra negra ligera */
 }
 
 .mission-text p {
   font-size: 1.2rem;
+  font-weight: bolder;
   color: #333;
   line-height: 1.6;
   transform: translateX(-150px);
