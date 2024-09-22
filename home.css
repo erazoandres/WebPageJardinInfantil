@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif; /* Usa una fuente más moderna */
+    font-family: 'Child', sans-serif; /* Usa una fuente más moderna */
   }
   
   body {
@@ -101,40 +101,45 @@
   }
 
   /* Estilos generales para los botones flotantes */
-.floating-icon {
-  position: fixed; /* Hace que los íconos floten en la pantalla */
-  bottom: 20px; /* Ajusta la distancia desde la parte inferior de la pantalla */
-  z-index: 1000; /* Asegura que los íconos estén por encima de otros elementos */
-  width: 50px; /* Tamaño del icono */
-  height: 50px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efectos de transición para animaciones */
-  animation: float 3s ease-in-out infinite; /* Añade la animación de flotación */
+
+  
+  /* Contenedor de los íconos flotantes */
+.floating-icon-container {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  right: 20px;
+  bottom: 20px;
+  gap:10px ;
 }
 
-/* Asegura que los iconos tengan borde redondeado y sombras coherentes */
+/* Estilo para cada ícono flotante */
+.floating-icon {
+  width: 70px;
+  height: 70px;
+
+}
+
+/* Estilo de la imagen dentro del ícono */
 .floating-icon img {
   width: 100%;
   height: auto;
   border-radius: 50%; /* Hace que el icono sea circular */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Añade una sombra suave */
+  background-color: #fff; /* Fondo blanco */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background-color: #fff; /* Evita que el fondo sea transparente */
 }
 
-/* Efecto hover para ambos botones */
+/* Efecto hover en la imagen */
 .floating-icon:hover img {
-  transform: scale(1.1); /* Agranda el icono al pasar el ratón */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Incrementa la sombra al hacer hover */
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más grande al hacer hover */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Botón flotante de Instagram (el primero) */
-.floating-icon:first-child {
-  right: 20px; /* Posición del icono en la esquina inferior derecha */
-}
-
-/* Botón flotante de WhatsApp (el segundo) */
-.floating-icon:nth-child(2) {
-  right: 80px; /* Ajusta para que el botón esté a 20px de distancia del de Instagram */
+/* Animación flotante (opcional) */
+.floating-icon {
+  animation: float 3s ease-in-out infinite; /* Efecto de flotación suave */
 }
 
 /* Animación de flotación */
@@ -151,6 +156,11 @@
   padding: 50px 5%;
   background-color: #f5f5f5;
   text-align: center;
+}
+
+.testimonials-section p{
+  padding: 20px;
+  font-size: 1.3em;
 }
 
 .testimonials-section h2 {
@@ -204,6 +214,7 @@
 .testimonial-card p {
   font-size: 1rem;
   color: #666;
+
 }
 
   
@@ -230,6 +241,7 @@
     color: #fff;
 }
 
+
 .hero h1 {
     font-size: 3em;
     margin-bottom: 20px;
@@ -239,9 +251,8 @@
 
 
 .hero p {
-    font-size: 1.2em;
-    color: #FF0080; /* Texto con color adicional */
-    padding: 5px;
+    font-size: 1.3em;
+    color: white; /* Texto con color adicional */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra al texto */
 
 }

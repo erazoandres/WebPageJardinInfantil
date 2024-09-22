@@ -249,6 +249,7 @@ h1, h2 {
   padding: 50px 5%;
   background-color: #f9f9f9;
   text-align: center; /* Centra el texto y contenido dentro de la sección */
+  
 }
 
 .profiles-section h2 {
@@ -258,8 +259,9 @@ h1, h2 {
 }
 
 .profiles-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+
   gap: 30px;
   justify-content: center; /* Centra los elementos de la cuadrícula horizontalmente */
   max-width: 1200px; /* Controla el ancho máximo del contenedor */
@@ -281,6 +283,18 @@ h1, h2 {
 .profile-item:hover {
   transform: translateY(-10px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  cursor: default;
+}
+
+.profile-item:hover h4{
+  color:#22C1C3;
+  transform: translateY(-15px);
+  transition: .2s ease-in-out;
+
+}
+
+.profile-item h4 {
+  transition: transform .2s ease;
 }
 
 .profile-image {
@@ -293,7 +307,7 @@ h1, h2 {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-bottom: 5px solid #22C1C3; /* Línea azul-verde en la parte inferior */
+  border-bottom: 5px solid #FF0080; /* Línea azul-verde en la parte inferior */
 }
 
 .profile-info {
@@ -304,6 +318,7 @@ h1, h2 {
 .profile-info h3 {
   font-size: 1.8rem;
   color: #333;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra al texto */
   margin-bottom: 10px;
 }
 
