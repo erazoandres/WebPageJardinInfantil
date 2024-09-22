@@ -183,7 +183,7 @@ body {
 
 /* Estilos cuando se hace hover sobre la tarjeta */
 .service-card:hover {
-  background-color: #FF99C3;
+  background-color: #FFD700 ;
   transform: translateY(-10px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
@@ -193,19 +193,19 @@ body {
 }
 
 .service-card:nth-child(2):hover {
-  background-color: #2bf0f7;
+  background-color: #FFD700 ;
 }
 
 .service-card:nth-child(3):hover {
-  background-color: #cf5252;
+  background-color: #00CED1 ;
 }
 
 .service-card:nth-child(4):hover {
-  background-color: #73ff00;
+  background-color: #00FF7F ;
 }
 
 .service-card:nth-child(5):hover {
-  background-color: #ffee00ea;
+  background-color: #20B2AA  ;
 }
 
 
@@ -253,8 +253,9 @@ body {
 /* Estilos para la sección de misión */
 .mission-section {
   padding: 50px 5%;
-  background-color: #D8BFD8 ;
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.9) 0%, rgba(216, 191, 216, 1) 40%, rgba(216, 191, 216, 0.8) 70%, rgba(216, 191, 216, 0) 100%);
 }
+
 
 .mission-content {
   display: flex;
