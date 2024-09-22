@@ -168,7 +168,7 @@ h1, h2 {
 .gallery-section {
   padding: 60px 5%;
   background-color: #fff;
-  background-image: url("images/fondoweb6.jpg");
+  background-image: url("images/fondoweb6.png");
   background-size:cover; /* Ajusta el tamaño de la imagen para cubrir el área */
   background-repeat: no-repeat; /* Evita que la imagen se repita */
 }

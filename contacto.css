@@ -179,13 +179,11 @@ body {
   max-width: 500px; /* Máximo ancho del contenedor de información */
   display: flex;
   flex-direction: column;
-  gap: 20px;
 }
 
 .contact-details,
 .map-container {
   background: #f9f9f9; /* Fondo gris claro para un look moderno */
-
   padding: 15px; /* Espacio interno reducido */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra más sutil */
 }
@@ -204,7 +202,6 @@ body {
 
 .map-container iframe {
   width: 100%;
-  height: 250px; /* Altura ajustada */
   border: 0;
   border-radius: 8px; /* Bordes redondeados */
 }
