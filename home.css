@@ -194,11 +194,12 @@
 
 
 .testimonial-card img {
-  width: 80px;
-  height: 80px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   margin-bottom: 15px;
   object-fit: cover;
+  transform: translateY(-40px);
 }
 
 .testimonial-card h3 {

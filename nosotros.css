@@ -573,3 +573,41 @@ h1, h2 {
     font-size: 0.9em; /* Ajusta el tamaño del párrafo */
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+.introduction-image-container {
+  position: relative;
+  display: inline-block; /* Para que la imagen y el texto se ajusten al tamaño de la imagen */
+}
+
+.introduction-image img {
+  width: 100%;
+  height: auto;
+}
+
+.image-caption {
+  position: absolute;
+  bottom: 0; /* Posiciona el texto en la parte inferior de la imagen */
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 1.2em;
+  box-sizing: border-box; /* Incluye padding en el tamaño total */
+}
+
+.image-caption p {
+  margin: 0;
+}
