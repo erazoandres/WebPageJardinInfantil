@@ -3,23 +3,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif; /* Usa una fuente más moderna */
 }
 
-body {
-  margin: 0;
-  font-size: 16px;
-  line-height: 1.6;
-  background-color: #f4f4f9; /* Fondo claro para contraste */
-}
 
-/* Estilos generales */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
 
 body {
   margin: 0;
@@ -44,7 +30,7 @@ body {
   background: rgba(34, 193, 195, 0.8);
   border-bottom: 1px solid rgba(34, 193, 195, 0.4);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  padding: 15px 30px;
+  padding: 5px 0px;
   transition: background 0.3s ease;
 }
 
@@ -74,7 +60,7 @@ body {
 .nav-links a {
   color: #fff; /* Color del texto de los enlaces */
   text-decoration: none; /* Elimina el subrayado de los enlaces */
-  font-size: 16px; /* Tamaño de fuente de los enlaces */
+  font-size: 1.2em; /* Tamaño de fuente de los enlaces */
   padding: 10px; /* Espacio alrededor del texto */
   transition: color 0.3s ease; /* Transición suave para el color */
 }
@@ -119,7 +105,7 @@ body {
 
 /* Estilos para la sección de servicios */
 .services-section {
-  margin-top: 50px;
+  margin-top: 20px;
   padding: 50px 5%;
   background-color: #f0f0f0;
   background-image: url("images/fondo-web3.png");
@@ -141,7 +127,7 @@ body {
   font-size: 1.2rem;
   color: #333;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 /* Estilos del contenedor de servicios */
@@ -150,6 +136,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-between; /* Alinea los elementos con espacio entre ellos */
   gap: 20px; /* Espacio entre las tarjetas */
+  padding-top: 60px;
 }
 
 /* Estilos para las tarjetas de servicio individuales */
@@ -233,6 +220,8 @@ body {
 
 .service-card:hover p {
   font-weight: bold;
+  color:white;
+  transition: .3s ease;
 }
 
 

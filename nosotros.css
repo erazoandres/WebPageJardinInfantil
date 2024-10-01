@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif; /* Usa una fuente más moderna */
 }
 
 body {
@@ -11,23 +10,8 @@ body {
   font-size: 16px;
   line-height: 1.6;
   background-color: #f4f4f9; /* Fondo claro para contraste */
-}
+} 
 
-/* Estilos generales */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
-
-body {
-  margin: 0;
-  padding-top: 60px; /* Agrega un relleno para compensar la altura de la barra de navegación */
-  font-size: 16px;
-  line-height: 1.6;
-  background-color: #f4f4f9;
-}
 
 .header {
   position: fixed;
@@ -41,10 +25,10 @@ body {
   justify-content: space-between;
   align-items: center;
   backdrop-filter: blur(10px);
-  background: rgba(34, 193, 195, 0.8);
+  background:#00ccff;
   border-bottom: 1px solid rgba(34, 193, 195, 0.4);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  padding: 15px 30px;
+  padding: 5px 0px;
   transition: background 0.3s ease;
 }
 
@@ -74,7 +58,7 @@ body {
 .nav-links a {
   color: #fff; /* Color del texto de los enlaces */
   text-decoration: none; /* Elimina el subrayado de los enlaces */
-  font-size: 16px; /* Tamaño de fuente de los enlaces */
+  font-size: 1.2em; /* Tamaño de fuente de los enlaces */
   padding: 10px; /* Espacio alrededor del texto */
   transition: color 0.3s ease; /* Transición suave para el color */
 }
@@ -302,6 +286,7 @@ h1, h2 {
   color: snow;
 }
 
+
 .profile-item:nth-child(1):hover {
   
   background-image: linear-gradient(135deg, rgba(250, 128, 114, 1), rgba(250, 128, 114, 0.5)); /* Salmón sólido a salmón transparente */
@@ -412,7 +397,7 @@ h1, h2 {
 .carousel-item img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ajusta la imagen para cubrir el contenedor sin deformarse */
+  object-fit: fill; /* Ajusta la imagen para cubrir el contenedor sin deformarse */
   border-radius: 10px; /* Bordes redondeados para las imágenes */
 }
 
@@ -497,7 +482,9 @@ h1, h2 {
 
 .introduction-text h2 {
   text-align: center;
-  font-size: 2.4em;
+  font-size: 3em;
+  color: #00ccff;
+
 }
 
 .introduction-text p {
@@ -611,3 +598,4 @@ h1, h2 {
 .image-caption p {
   margin: 0;
 }
+

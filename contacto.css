@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -29,7 +28,7 @@ body {
   background: rgba(34, 193, 195, 0.8);
   border-bottom: 1px solid rgba(34, 193, 195, 0.4);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  padding: 15px 30px;
+  padding: 5px 0px;
   transition: background 0.3s ease;
 }
 .logo a {
@@ -58,7 +57,7 @@ body {
 .nav-links a {
   color: #fff; /* Color del texto de los enlaces */
   text-decoration: none; /* Elimina el subrayado de los enlaces */
-  font-size: 16px; /* Tamaño de fuente de los enlaces */
+  font-size: 1.2em; /* Tamaño de fuente de los enlaces */
   padding: 10px; /* Espacio alrededor del texto */
   transition: color 0.3s ease; /* Transición suave para el color */
 }
@@ -183,7 +182,7 @@ body {
 
 .contact-details,
 .map-container {
-  background: #f9f9f9; /* Fondo gris claro para un look moderno */
+  background:#1a9a9a;
   padding: 15px; /* Espacio interno reducido */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra más sutil */
 }
