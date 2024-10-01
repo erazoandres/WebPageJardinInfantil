@@ -219,7 +219,7 @@ body {
 }
 
 .service-card:hover p {
-  font-weight: bold;
+  
   color:white;
   transition: .3s ease;
 }
