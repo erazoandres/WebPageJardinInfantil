@@ -9,7 +9,7 @@ body {
   margin: 0;
   padding-top: 60px; /* Agrega un relleno para compensar la altura de la barra de navegación */
   line-height: 1.6;
- 
+  height: 100vh;
 }
 
 .header {
@@ -229,7 +229,7 @@ body {
   height: 100%;
   width: 100%;
   z-index: -1;
-  overflow: hidden;
+
 }
 
 .video_contacto {
