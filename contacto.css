@@ -8,7 +8,7 @@
 body {
   margin: 0;
   padding-top: 60px; /* Agrega un relleno para compensar la altura de la barra de navegación */
-  font-size: 16px;
+
   line-height: 1.6;
   overflow: hidden;
 }
@@ -57,7 +57,7 @@ body {
 .nav-links a {
   color: #fff; /* Color del texto de los enlaces */
   text-decoration: none; /* Elimina el subrayado de los enlaces */
-  font-size: 1.2em; /* Tamaño de fuente de los enlaces */
+
   padding: 10px; /* Espacio alrededor del texto */
   transition: color 0.3s ease; /* Transición suave para el color */
 }
@@ -70,7 +70,7 @@ body {
 .menu-toggle {
   display: none; /* Oculta el botón de menú hamburguesa por defecto */
   cursor: pointer;
-  font-size: 1.8rem;
+
   color: #fff;
 }
 
@@ -119,7 +119,7 @@ body {
 
 .contact-form h3 {
   margin-bottom: 15px;
-  font-size: 1.5rem; /* Tamaño de fuente ajustado */
+
   color: #333; /* Color de texto oscuro */
 }
 
@@ -140,7 +140,7 @@ body {
   padding: 10px; /* Espacio interno reducido */
   border-radius: 6px; /* Bordes redondeados */
   border: 1px solid #ccc; /* Borde sutil */
-  font-size: 14px; /* Tamaño de fuente ajustado */
+
   transition: border-color 0.3s, box-shadow 0.3s; /* Transiciones suaves */
 }
 
@@ -162,7 +162,7 @@ body {
   padding: 10px; /* Espacio interno reducido */
   border-radius: 6px; /* Bordes redondeados */
   cursor: pointer;
-  font-size: 15px; /* Tamaño de fuente ajustado */
+
   width: 100%;
   transition: background-color 0.3s, transform 0.2s; /* Transiciones suaves */
 }
@@ -190,12 +190,12 @@ body {
 .contact-details h3,
 .map-container h3 {
   margin-bottom: 10px; /* Espacio reducido para los encabezados */
-  font-size: 1.4rem; /* Tamaño de fuente ajustado */
+
   color: #333; /* Color de texto oscuro */
 }
 
 .contact-details p {
-  font-size: 14px; /* Tamaño de fuente ajustado */
+
   margin-bottom: 8px; /* Espacio reducido entre párrafos */
 }
 
@@ -266,7 +266,6 @@ body {
 .close-button {
   color: #aaa;
   float: right;
-  font-size: 28px;
   font-weight: bold;
 }
 

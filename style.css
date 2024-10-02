@@ -1,8 +1,15 @@
-h1,h2{
-    font-family: 'Monserrat' !important;
-
+h2 ,h3{
+    font-family: "Caveat", cursive !important;
 }
 
-h3,p{
-    font-family: sans-serif;
+
+.overlay h1{
+    font-family: "caveat";
+    font-size: 200px;
+}
+
+
+
+.hero-content h1{
+    font-family:'Monserrat';
 }
