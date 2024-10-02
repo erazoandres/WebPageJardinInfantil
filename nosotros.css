@@ -313,7 +313,7 @@ h1, h2 {
 
 
 .profile-item:hover h4{
-  color:#22C1C3;
+  color:#666;
   transform: translateY(-15px);
   transition: .2s ease-in-out;
 
