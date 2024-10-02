@@ -97,3 +97,7 @@ nav , .navbar{
     color:#b283f0;
     transition: .3s ease;
 }
+
+.logo a{
+    margin-left: 50px;
+}
