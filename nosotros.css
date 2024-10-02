@@ -26,7 +26,7 @@ body {
   align-items: center;
   backdrop-filter: blur(10px);
   background:#00ccff;
-  border-bottom: 1px solid rgba(34, 193, 195, 0.4);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra en la parte inferior */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   padding: 5px 0px;
   transition: background 0.3s ease;
