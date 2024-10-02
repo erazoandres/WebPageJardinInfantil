@@ -1,6 +1,103 @@
-h1, h2, h3, h4, h5, h6 {
-    color: blue; /* Cambia el color a azul */
-    font-family: "Caveat", sans-serif; /* Cambia la fuente */
-    margin: 10px 0; /* Agrega márgenes */
-    
+/*Servicios*/
+
+h2 ,h3{
+    font-family: "Caveat", cursive !important;
+}
+
+.gallery-section h2{
+    font-size: 70px;
+}
+
+.introduction-text h2{
+    font-size: 70px;
+}
+
+.profiles-section h2{
+    font-size: 70px;
+}
+
+.overlay h1{
+    font-family: "caveat";
+    font-size: 150px;
+}
+
+
+
+.hero-content h1{
+    font-family:'Monserrat';
+}
+
+
+/* SERVICIOS */
+.services-section h2{
+    font-family: "caveat";
+    font-size: 70px;
+}
+
+.mission-text h2{
+    font-size: 70px;
+}
+
+.service-card h3{
+    font-size: 30px;
+}
+
+
+/* CONTACTO */
+
+.contact-details h3 , .contact-form h3{
+    font-size: 35px;
+}
+
+.contact-details h3{
+    color:whitesmoke;
+}
+
+.map-container h3{
+    font-size: 35px;
+}
+
+
+/* INDEX */
+
+#body-target h3{
+    font-size: 30px;
+}
+
+#body-target h4{
+    font-style: italic;
+    color:darkgrey;
+}
+
+
+.testimonials-section h2{
+    font-size: 70px;
+    color:#b283f0;
+}
+
+
+#body-target:hover h4{
+    color:#b283f0;
+}
+
+
+
+/* ESTILOS GENERALES PARA TODAS LAS PAGINAS */
+p{
+    font-family: 'Poppins' ;   
+}
+
+
+nav , .navbar{
+    font-family: 'Poppins' ;   
+}
+
+
+.nav-links li:hover a{
+    color:#b283f0;
+    transition: .3s ease;
+}
+
+.logo a{
+    margin-left: 50px;
 }
