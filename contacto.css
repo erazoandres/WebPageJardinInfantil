@@ -9,7 +9,7 @@ body {
   margin: 0;
   padding-top: 60px; /* Agrega un relleno para compensar la altura de la barra de navegación */
   line-height: 1.6;
-  overflow: hidden;
+ 
 }
 
 .header {
