@@ -267,6 +267,7 @@ h1, h2 {
   position: relative;
   display: flex;
   flex-direction: column;
+  min-width: 20%;
   transition: transform 0.3s ease, box-shadow 0.3s, color .5s ease , background-image 1s ease;  
   margin: 0 auto; /* Centra los perfiles dentro de la cuadrícula */
 }
@@ -598,3 +599,12 @@ h1, h2 {
   margin: 0;
 }
 
+
+
+.imagen-diagonal {
+  width: 300px; /* Ancho de la imagen */
+  height: 200px; /* Alto de la imagen */
+  object-fit: cover; /* Ajusta la imagen */
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%); /* Define la forma diagonal */
+  border: 2px solid #333; /* Opcional: agrega un borde para visualizar mejor */
+}
