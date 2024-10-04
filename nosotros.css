@@ -484,12 +484,7 @@ h1, h2 {
   max-width: 40%;
 }
 
-.introduction-text h2 {
-  text-align: center;
-  font-size: 3em;
-  color: #00ccff;
 
-}
 
 .introduction-text p {
   font-size: 1.2em;
@@ -583,6 +578,11 @@ h1, h2 {
 .introduction-image img {
   width: 100%;
   height: auto;
+}
+
+
+.introduction-text h2 {
+  font-size: 2.5em !important;
 }
 
 .image-caption {

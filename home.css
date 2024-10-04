@@ -75,18 +75,19 @@
   
   @media (max-width: 768px) {
     .nav-links {
-      display: none; /* Oculta el menú en pantallas pequeñas */
-      position: absolute;
+      
+      
       top: 60px;
       left: 0;
       right: 0;
-      background: rgba(34, 193, 195, 0.9);
-      flex-direction: column;
+      
+      flex-direction: row;
       align-items: center;
       padding: 15px 0;
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
       z-index: 9; /* Asegura que el menú se muestre sobre el contenido */
     }
+    
+
   
     .nav-links.show {
       display: flex; /* Muestra el menú cuando la clase 'show' está presente */
@@ -153,6 +154,9 @@
   padding: 50px 5%;
   background-color: #f5f5f5;
   text-align: center;
+  justify-items: center;
+  align-content: center;
+  gap:40px;
 }
 
 
@@ -173,6 +177,7 @@
   grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
   margin-top: 100px;
   justify-items: center;
+ 
 }
 
 
