@@ -274,6 +274,10 @@ body {
 
 }
 
+.mission-text p{
+  text-align:justify;
+}
+
 .mission-text h2 {
   font-size: 2.5rem;
   color: #FF0080; /* Color azul-verde */
