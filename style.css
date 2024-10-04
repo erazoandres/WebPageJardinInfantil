@@ -1,7 +1,8 @@
 /*Servicios*/
 
 h2 ,h3{
-    font-family: "Caveat", cursive !important;
+    /* font-family: "Caveat", cursive !important; */
+    font-family: "Dosis", sans-serif;
 }
 
 .gallery-section h2{
@@ -17,20 +18,23 @@ h2 ,h3{
 }
 
 .overlay h1{
-    font-family: "caveat";
+    /* font-family: "caveat"; */
+    font-family: "Dosis", sans-serif;
     font-size: 150px;
     line-height: 170px;
 }
 
 
 .hero-content h1{
-    font-family:'Monserrat';
+    /* font-family:'Monserrat'; */
+    font-family: "Dosis", sans-serif;
 }
 
 
 /* SERVICIOS */
 .services-section h2{
-    font-family: "caveat";
+    /*  font-family: "caveat"; */
+    font-family: "Dosis", sans-serif; 
     font-size: 70px;
 }
 

@@ -176,7 +176,8 @@ h1, h2 {
   max-height: 85%;
   cursor: pointer;
   border-radius: 10px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease , scale 0.3s;
+  
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -214,6 +215,7 @@ h1, h2 {
 
 .gallery-item:hover img {
   transform: scale(1.1);
+  
 }
 
 .gallery-item::before {
