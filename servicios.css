@@ -391,3 +391,74 @@ body {
 .image-container.scrolled img {
   transform: scale(1.2); /* Zoom aplicado */
 }
+
+
+.videos-section {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  
+}
+
+.videos-section h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.videos-section p {
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 30px;
+}
+
+.videos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Alinea los elementos con espacio entre ellos */
+}
+
+.video-card {
+  width: calc(33.33% - 10px); /* Ajusta el ancho de las columnas */
+  margin-bottom: 20px; /* Espaciado entre filas */
+}
+
+.video-card:nth-child(n+4) {
+  width: calc(50% - 10px); /* Ancho para la segunda fila */
+}
+
+.video-card:hover {
+  transform: scale(1.05);
+}
+
+.video-card iframe {
+  width: 100%;
+  height: 200px;
+}
+
+.video-card h3 {
+  font-family: 'Dosis', sans-serif;
+  padding: 15px;
+  font-size: 1.2em;
+  margin: 0;
+}
+
+/* Colores Pastel */
+.pastel1 {
+  background-color: #FFB3BA; /* Rosa Pastel */
+}
+
+.pastel2 {
+  background-color: #FFDFBA; /* Amarillo Pastel */
+}
+
+.pastel3 {
+  background-color: #FFFFBA; /* Verde Pastel */
+}
+
+.pastel4 {
+  background-color: #BAE1FF; /* Azul Pastel */
+}
+
+.pastel5 {
+  background-color: #C2F0C2; /* Verde Claro Pastel */
+}

@@ -38,6 +38,10 @@ h2 ,h3{
     font-size: 70px;
 }
 
+.videos-section h2{
+    font-size: 40px;
+}
+
 .service-card h3{
     font-size: 30px;
 }
