@@ -10,6 +10,7 @@ body {
   padding-top: 60px; /* Agrega un relleno para compensar la altura de la barra de navegación */
   line-height: 1.6;
   height: 100vh;
+  overflow: hidden;
 }
 
 .header {
@@ -18,7 +19,6 @@ body {
   width: 100%;
   z-index: 10;
 
-  
 }
 
 .navbar {
@@ -103,8 +103,9 @@ body {
 
 /* Estilos para la sección de contacto */
 .contact-container {
+  width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   flex-wrap: wrap;
   gap: 20px; /* Espacio entre las columnas */
   padding: 20px;  
@@ -112,7 +113,7 @@ body {
 
 .contact-form {
   flex: 1 1 100%;
-  max-width: 300px; /* Máximo ancho del formulario */
+  max-width: 250px; /* Máximo ancho del formulario */
   padding: 15px; /* Espacio interno más compacto */
   background: #f9f9f9; /* Fondo gris claro para un look moderno */
   
@@ -185,18 +186,19 @@ body {
 .contact-details,
 .map-container {
   background:#FFE3AB;
-  
+  max-width: 400px;
   padding: 15px; /* Espacio interno reducido */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra más sutil */
 }
 
 .contact-details h3{
+  margin-top: 0;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; /* Borde negro */
 }
 
 .contact-details h3,
 .map-container h3 {
-  margin-bottom: 10px; /* Espacio reducido para los encabezados */
+
 
   color: #333; /* Color de texto oscuro */
 }

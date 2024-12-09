@@ -112,7 +112,6 @@ h1, h2 {
   position: relative;
   overflow: hidden; /* Oculta el contenido que se desborda */
   perspective: 1px; /* Establece la perspectiva del parallax */
-  transform-style: preserve-3d; /* Permite la transformación 3D */
 }
 
 .video-bg {
@@ -528,4 +527,24 @@ h1, h2 {
   object-fit: cover; /* Ajusta la imagen */
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%); /* Define la forma diagonal */
   border: 2px solid #333; /* Opcional: agrega un borde para visualizar mejor */
+}
+
+.team {
+  display: flex;
+  justify-content: center;
+}
+
+.team img {
+  width: 40%; /* Asegura que la imagen ocupe todo el ancho disponible de su contenedor */
+  height: auto; /* Mantiene la proporción original de la imagen */
+  object-fit: cover; /* La imagen se recorta para llenar el contenedor sin deformarse */
+  border-radius: 10px; /* Bordes redondeados para un diseño más suave */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para un toque de profundidad */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves para efectos interactivos */
+  margin: 10px auto; /* Centra la imagen y le agrega un pequeño espacio alrededor */
+}
+
+.team img:hover {
+  transform: scale(1.05); /* Efecto de ampliación al pasar el ratón */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta la sombra al pasar el ratón */
 }
