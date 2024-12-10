@@ -12,7 +12,6 @@ body {
   background-color: #f4f4f9; /* Fondo claro para contraste */
 } 
 
-
 .header {
   position: fixed;
   top: 0;
@@ -99,8 +98,6 @@ body {
   }
 }
 
-
-
 h1, h2 {
   text-align: center;
   color: #22C1C3; /* Color azul-verde */
@@ -134,20 +131,19 @@ h1, h2 {
   height: 100%;
   color: #fff;
   text-align: center;
-  z-index: 1; /* Asegura que el contenido de overlay esté delante del video */
+  z-index: 1;
 }
-
 
 .overlay h1 {
   font-size: 4rem;
   margin-bottom: 20px;
   color: #FF0080; /* Color rosa vibrante */
   text-shadow: 
-    0 0 3px rgba(255, 255, 255, 0.6), /* Borde blanco sutil */
-    0 0 6px rgba(255, 255, 255, 0.6), /* Borde blanco un poco más suave */
-    2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra sutil en negro */
+    .5px .5px 0 rgba(0, 0, 0, 1), /* Borde negro a la derecha y abajo */
+    -.5px -.5px 0 rgba(0, 0, 0, 1), /* Borde negro a la izquierda y arriba */
+    .5px -.5px 0 rgba(0, 0, 0, 1), /* Borde negro en diagonal */
+    -.5px .5px 0 rgba(0, 0, 0, 1); /* Borde negro en diagonal */
 }
-
 
 .overlay p {
   font-size: 1.5rem;
@@ -157,8 +153,6 @@ h1, h2 {
   border-radius: 5px; /* Bordes redondeados */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra de fondo */
 }
-
-
 
 .gallery-section {
   padding: 60px 5%;
@@ -178,9 +172,7 @@ h1, h2 {
     -.5px .5px 0 rgba(0, 0, 0, 1); /* Borde negro en diagonal */
 }
 
-
 .gallery {
-  
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 10px;
@@ -252,8 +244,6 @@ h1, h2 {
   opacity: 1;
 }
 
-
-
 /* Estilos para la sección de perfiles */
 .profiles-section {
   padding: 60px 5%;
@@ -303,22 +293,20 @@ h1, h2 {
   color: rgba(0, 0, 0, 0.3); /* Negro con 50% de transparencia */
 
 }
+
 .profile-item:hover h3{
   color: snow;
 }
-
 
 .profile-item:nth-child(1):hover {
   
   background-image: linear-gradient(135deg, rgba(250, 128, 114, 1), rgba(250, 128, 114, 0.5)); /* Salmón sólido a salmón transparente */
 }
 
-
 .profile-item:nth-child(2):hover {
   background-image: linear-gradient(135deg, rgba(255, 0, 128, 1), rgba(255, 0, 128, 0.5)); /* Fucsia sólido a fucsia transparente */
 
 }
-
 
 .profile-item:nth-child(3):hover {
   background-image: linear-gradient(165deg, rgba(255, 255, 0, 1), rgba(255, 255, 0, 0.5)); /* Amarillo sólido a amarillo transparente */
@@ -329,9 +317,6 @@ h1, h2 {
   background-image: linear-gradient(135deg, rgba(173, 255, 47, 1), rgba(173, 255, 47, 0.5)); /* Greenyellow sólido a greenyellow transparente */
 
 }
-
-
-
 
 .profile-item:hover h4{
   color:#666;
@@ -356,7 +341,6 @@ h1, h2 {
   object-fit: fill;
 
 }
-
 
 .profile-info {
   padding: 20px;
@@ -383,16 +367,16 @@ h1, h2 {
   }
 }
 
-
-
-
 .introduction-section {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: auto; /* Cambiado a auto para permitir que el contenido fluya correctamente */
-  padding: 50px 10%; /* Reduce el espaciado en pantallas más pequeñas */
-  background-color: #f7f7f7;
+
+  background-image: linear-gradient(to top left, #FFC0CB, #FFB6C1); /* Degradado rosa pastel desde la esquina inferior derecha */
+  color: black; /* Color del texto */
+  padding: 20px; /* Espaciado alrededor del contenido */
+  border-radius: 8px; /* Bordes redondeados */
 }
 
 .introduction-content {
@@ -419,8 +403,6 @@ h1, h2 {
 .introduction-text, .introduction-image {
   max-width: 40%;
 }
-
-
 
 .introduction-text p {
   font-size: 1.2em;
@@ -495,17 +477,6 @@ h1, h2 {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
 .introduction-image-container {
   position: relative;
   display: inline-block; /* Para que la imagen y el texto se ajusten al tamaño de la imagen */
@@ -515,7 +486,6 @@ h1, h2 {
   width: 100%;
   height: auto;
 }
-
 
 .introduction-text h2 {
   font-size: 2.5em !important;
@@ -538,8 +508,6 @@ h1, h2 {
   margin: 0;
 }
 
-
-
 .imagen-diagonal {
   width: 300px; /* Ancho de la imagen */
   height: 200px; /* Alto de la imagen */
@@ -551,6 +519,13 @@ h1, h2 {
 .team {
   display: flex;
   justify-content: center;
+
+  background-image: radial-gradient(circle, #ffffff, #A7C7E7); /* Degradado radial de blanco a azul pastel */
+  color: black; /* Color del texto */
+  padding: 20px; /* Espaciado alrededor del contenido */
+  border-radius: 8px; /* Bordes redondeados */
+  
+  
 }
 
 .team img {

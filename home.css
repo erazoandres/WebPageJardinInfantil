@@ -169,13 +169,12 @@
 .testimonials-section h2 {
   font-size: 2.5rem;
   color: #22C1C3;
-  margin-bottom: 40px;
 }
 
 .testimonials {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
-  margin-top: 100px;
+  margin-top: 40px;
   justify-items: center;
  
 }
@@ -277,9 +276,10 @@
   margin-bottom: 20px;
   color: #22C1C3; /* Título con color vibrante */
   text-shadow: 
-    0 0 3px rgba(255, 255, 255, 0.3), /* Borde blanco más suave */
-    0 0 6px rgba(255, 255, 255, 0.3), /* Menos difuminado para el borde blanco */
-    2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra sutil en negro para contraste */
+    .5px .5px 0 rgba(0, 0, 0, 1), /* Borde negro a la derecha y abajo */
+    -.5px -.5px 0 rgba(0, 0, 0, 1), /* Borde negro a la izquierda y arriba */
+    .5px -.5px 0 rgba(0, 0, 0, 1), /* Borde negro en diagonal */
+    -.5px .5px 0 rgba(0, 0, 0, 1); /* Borde negro en diagonal */
 }
 
 
