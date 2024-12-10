@@ -137,16 +137,28 @@ h1, h2 {
   z-index: 1; /* Asegura que el contenido de overlay esté delante del video */
 }
 
+
 .overlay h1 {
   font-size: 4rem;
   margin-bottom: 20px;
   color: #FF0080; /* Color rosa vibrante */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra al texto */
+  text-shadow: 
+    0 0 3px rgba(255, 255, 255, 0.6), /* Borde blanco sutil */
+    0 0 6px rgba(255, 255, 255, 0.6), /* Borde blanco un poco más suave */
+    2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra sutil en negro */
 }
+
 
 .overlay p {
   font-size: 1.5rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra del texto */
+  background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro */
+  padding: 10px; /* Espaciado dentro del párrafo */
+  border-radius: 5px; /* Bordes redondeados */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra de fondo */
 }
+
+
 
 .gallery-section {
   padding: 60px 5%;
@@ -159,9 +171,16 @@ h1, h2 {
 .gallery-section h2 {
   font-size: 2.5rem;
   color: #22C1C3; /* Títulos en color azul-verde */
+  text-shadow: 
+    .5px .5px 0 rgba(0, 0, 0, 1), /* Borde negro a la derecha y abajo */
+    -.5px -.5px 0 rgba(0, 0, 0, 1), /* Borde negro a la izquierda y arriba */
+    .5px -.5px 0 rgba(0, 0, 0, 1), /* Borde negro en diagonal */
+    -.5px .5px 0 rgba(0, 0, 0, 1); /* Borde negro en diagonal */
 }
 
+
 .gallery {
+  
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 10px;
