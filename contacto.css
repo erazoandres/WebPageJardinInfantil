@@ -188,7 +188,7 @@ body {
 .map-container {
   background:#FFE3AB;
   max-width: 400px;
-  padding: 15px; /* Espacio interno reducido */
+  padding: 0 15px; /* Espacio interno reducido */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra más sutil */
 }
 
@@ -199,8 +199,8 @@ body {
 
 .contact-details h3,
 .map-container h3 {
-
-
+  margin-top: 0;
+  padding-top: 0;
   color: #333; /* Color de texto oscuro */
 }
 
@@ -213,6 +213,7 @@ body {
   width: 100%;
   border: 0;
   border-radius: 8px; /* Bordes redondeados */
+  padding-top: 0;
 }
 
 /* Responsividad para pantallas pequeñas */

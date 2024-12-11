@@ -375,8 +375,8 @@ body {
   justify-content: space-between;
   align-items: center;
   height: auto; /* Cambiado a auto para permitir que el contenido fluya correctamente */
+  background-image: linear-gradient(to top left, #ffffff, #FFB6C1) !important;
 
-  background-image: linear-gradient(to top left, #FFC0CB, #FFB6C1); /* Degradado rosa pastel desde la esquina inferior derecha */
   color: black; /* Color del texto */
   padding: 20px; /* Espaciado alrededor del contenido */
   border-radius: 8px; /* Bordes redondeados */

@@ -325,9 +325,9 @@ body {
 }
 
 .aliados h2{
-  opacity: 0.8;
-  color: #666;
   padding-bottom: 15px;
+  color:#333
+
 }
 
 .aliados img{
@@ -340,6 +340,10 @@ body {
 .aliados img:hover{
   opacity: 1;
   transition: .3s step-end;
+}
+
+.aliados img:hover h2{
+  color: #333;
 }
 
 
@@ -560,7 +564,7 @@ body {
     width: 20px;
     height: 20px;
     font-size: 14px;
-  }
-};
+  } 
+}
 
 
