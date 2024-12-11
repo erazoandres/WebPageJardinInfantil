@@ -267,14 +267,20 @@
     text-align: center;
     z-index: 2;
     color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 
 
 .hero h1 {
-  font-size: 5em;
+  font-size: 5rem;
   margin-bottom: 20px;
-  color: #22C1C3; /* Título con color vibrante */
+  color: #FF0080; /* Color rosa vibrante */
   text-shadow: 
     .5px .5px 0 rgba(0, 0, 0, 1), /* Borde negro a la derecha y abajo */
     -.5px -.5px 0 rgba(0, 0, 0, 1), /* Borde negro a la izquierda y arriba */
@@ -283,22 +289,26 @@
 }
 
 
-
-
-
 .hero p {
-  font-size: 1.5em; /* Aumenta el tamaño del texto para hacerlo más visible */
+  font-size: 1.2em; /* Aumenta el tamaño del texto para hacerlo más visible */
   font-weight: bold; /* Hace que el texto sea más grueso */
   color: rgb(255, 255, 255); /* Cambia el color del texto a blanco para alto contraste */
-  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6), 0 0 25px rgba(255, 0, 0, 0.6); /* Sombra más pronunciada y brillante */
+  /* text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6), 0 0 25px rgba(255, 0, 0, 0.6); Sombra más pronunciada y brillante */
   letter-spacing: 1px; /* Aumenta el espaciado entre las letras para mayor legibilidad */
   line-height: 1.6; /* Da más espacio entre las líneas para que el texto sea más legible */
   text-transform: uppercase; /* Hace que el texto esté en mayúsculas */
   padding: 10px; /* Añade algo de espacio alrededor del texto */
   border-radius: 8px; /* Bordes redondeados */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); /* Sombra de fondo para el párrafo */
+  /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); Sombra de fondo para el párrafo */
   text-align: center; /* Centra el texto */
+  text-shadow: 
+  .5px .5px 0 rgba(0, 0, 0, 1), /* Borde negro a la derecha y abajo */
+  -.5px -.5px 0 rgba(0, 0, 0, 1), /* Borde negro a la izquierda y arriba */
+  .5px -.5px 0 rgba(0, 0, 0, 1), /* Borde negro en diagonal */
+  -.5px .5px 0 rgba(0, 0, 0, 1); /* Borde negro en diagonal */
+  width: 70%;
 }
+
 
 
 .content-section {

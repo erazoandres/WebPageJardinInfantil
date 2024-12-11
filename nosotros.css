@@ -147,11 +147,16 @@ h1, h2 {
 
 .overlay p {
   font-size: 1.5rem;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra del texto */
-  background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro */
+  /* text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); Sombra del texto */
+  /* background-color: rgba(0, 0, 0, 0.6); Fondo oscuro */
   padding: 10px; /* Espaciado dentro del párrafo */
   border-radius: 5px; /* Bordes redondeados */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra de fondo */
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); Sombra de fondo */
+  text-shadow: 
+  .5px .5px 0 rgba(0, 0, 0, 1), /* Borde negro a la derecha y abajo */
+  -.5px -.5px 0 rgba(0, 0, 0, 1), /* Borde negro a la izquierda y arriba */
+  .5px -.5px 0 rgba(0, 0, 0, 1), /* Borde negro en diagonal */
+  -.5px .5px 0 rgba(0, 0, 0, 1); /* Borde negro en diagonal */
 }
 
 .gallery-section {
