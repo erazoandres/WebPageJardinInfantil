@@ -7,8 +7,6 @@
   
   body {
     margin: 0;
-    font-size: 16px;
-    line-height: 1.6;
     background-color: #f4f4f9; /* Fondo claro para contraste */
   }
   
@@ -263,22 +261,25 @@
 
 
 .hero-content {
-    position: absolute;
-    text-align: center;
-    z-index: 2;
-    color: #fff;
+  position: absolute;
+  text-align: center;
+  z-index: 2;
+  color: #fff;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Empuja el contenido hacia la parte superior */
+  align-items: center; /* Centra horizontalmente */
+
+  top:100px; /* Asegúrate de que el contenido comience desde la parte superior */
+  width: 100%; /* Opcional, para asegurarte de que ocupe todo el ancho */
+  padding-top: 20px; /* Ajusta este valor según el espaciado que desees */
 }
 
 
 
+
 .hero h1 {
-  font-size: 5rem;
   margin-bottom: 20px;
   color: #FF0080; /* Color rosa vibrante */
   text-shadow: 
@@ -290,13 +291,11 @@
 
 
 .hero p {
-  font-size: 1.2em; /* Aumenta el tamaño del texto para hacerlo más visible */
-  font-weight: bold; /* Hace que el texto sea más grueso */
+  font-size: 1.5em; /* Aumenta el tamaño del texto para hacerlo más visible */
   color: rgb(255, 255, 255); /* Cambia el color del texto a blanco para alto contraste */
   /* text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6), 0 0 25px rgba(255, 0, 0, 0.6); Sombra más pronunciada y brillante */
   letter-spacing: 1px; /* Aumenta el espaciado entre las letras para mayor legibilidad */
   line-height: 1.6; /* Da más espacio entre las líneas para que el texto sea más legible */
-  text-transform: uppercase; /* Hace que el texto esté en mayúsculas */
   padding: 10px; /* Añade algo de espacio alrededor del texto */
   border-radius: 8px; /* Bordes redondeados */
   /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); Sombra de fondo para el párrafo */

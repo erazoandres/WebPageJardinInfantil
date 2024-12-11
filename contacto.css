@@ -109,6 +109,7 @@ body {
   flex-wrap: wrap;
   gap: 20px; /* Espacio entre las columnas */
   padding: 20px;  
+  
 }
 
 .contact-form {
@@ -116,7 +117,7 @@ body {
   max-width: 250px; /* Máximo ancho del formulario */
   padding: 15px; /* Espacio interno más compacto */
   background: #f9f9f9; /* Fondo gris claro para un look moderno */
-  
+
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra más sutil */
 }
 

@@ -8,7 +8,7 @@
 body {
   margin: 0;
   font-size: 16px;
-  line-height: 1.6;
+
   background-color: #f4f4f9; /* Fondo claro para contraste */
 } 
 
@@ -98,11 +98,6 @@ body {
   }
 }
 
-h1, h2 {
-  text-align: center;
-  color: #22C1C3; /* Color azul-verde */
-  margin-bottom: 20px;
-}
 
 .parallax {
   height: 100vh;
@@ -135,7 +130,6 @@ h1, h2 {
 }
 
 .overlay h1 {
-  font-size: 4rem;
   margin-bottom: 20px;
   color: #FF0080; /* Color rosa vibrante */
   text-shadow: 
@@ -143,7 +137,7 @@ h1, h2 {
     -.5px -.5px 0 rgba(0, 0, 0, 1), /* Borde negro a la izquierda y arriba */
     .5px -.5px 0 rgba(0, 0, 0, 1), /* Borde negro en diagonal */
     -.5px .5px 0 rgba(0, 0, 0, 1); /* Borde negro en diagonal */
-}
+  }
 
 .overlay p {
   font-size: 1.5rem;
@@ -157,15 +151,19 @@ h1, h2 {
   -.5px -.5px 0 rgba(0, 0, 0, 1), /* Borde negro a la izquierda y arriba */
   .5px -.5px 0 rgba(0, 0, 0, 1), /* Borde negro en diagonal */
   -.5px .5px 0 rgba(0, 0, 0, 1); /* Borde negro en diagonal */
+
+  width: 70%;
 }
 
 .gallery-section {
   padding: 60px 5%;
   background-color: #fff;
+  text-align: center;
   background-image: url("images/fondoweb6.png");
   background-size:cover; /* Ajusta el tamaño de la imagen para cubrir el área */
   background-repeat: no-repeat; /* Evita que la imagen se repita */
 }
+
 
 .gallery-section h2 {
   font-size: 2.5rem;
@@ -440,6 +438,7 @@ h1, h2 {
   }
 
   .introduction-text h2 {
+
     font-size: 1.8em; /* Ajusta el tamaño del título */
   }
 
@@ -493,7 +492,9 @@ h1, h2 {
 }
 
 .introduction-text h2 {
-  font-size: 2.5em !important;
+  font-size: 3em !important;
+  margin-bottom: 1em;
+
 }
 
 .image-caption {
@@ -524,6 +525,9 @@ h1, h2 {
 .team {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 1.5em;
 
   background-image: radial-gradient(circle, #ffffff, #A7C7E7); /* Degradado radial de blanco a azul pastel */
   color: black; /* Color del texto */
@@ -547,3 +551,4 @@ h1, h2 {
   transform: scale(1.05); /* Efecto de ampliación al pasar el ratón */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta la sombra al pasar el ratón */
 }
+
