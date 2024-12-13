@@ -24,11 +24,11 @@ body {
   justify-content: space-between;
   align-items: center;
   backdrop-filter: blur(10px);
-  background:#00ccff;
+  background: #00ccff;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra en la parte inferior */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   padding: 5px 0px;
   transition: background 0.3s ease;
+  height: 60px; /* Ajusta la altura fija del navbar si es necesario */
 }
 
 .logo a {
@@ -37,7 +37,8 @@ body {
 }
 
 .logo img {
-  height: 50px; /* Ajusta la altura del logo según tus necesidades */
+  max-height: 100%; /* Limita la altura al 100% del contenedor */
+  height: 70px; /* Define una altura fija para el logo */
   width: auto; /* Mantiene la proporción del logo */
   border: none; /* Elimina cualquier borde */
 }
