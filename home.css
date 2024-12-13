@@ -291,6 +291,8 @@
     -.5px -.5px 0 rgba(0, 0, 0, 1), /* Borde negro a la izquierda y arriba */
     .5px -.5px 0 rgba(0, 0, 0, 1), /* Borde negro en diagonal */
     -.5px .5px 0 rgba(0, 0, 0, 1); /* Borde negro en diagonal */
+
+  font-size: 85px !important;
 }
 
 

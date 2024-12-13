@@ -138,6 +138,9 @@ body {
     -.5px -.5px 0 rgba(0, 0, 0, 1), /* Borde negro a la izquierda y arriba */
     .5px -.5px 0 rgba(0, 0, 0, 1), /* Borde negro en diagonal */
     -.5px .5px 0 rgba(0, 0, 0, 1); /* Borde negro en diagonal */
+
+
+    font-size: 85px !important;
   }
 
 .overlay p {
@@ -376,7 +379,7 @@ body {
   justify-content: space-between;
   align-items: center;
   height: auto; /* Cambiado a auto para permitir que el contenido fluya correctamente */
-  background-image: linear-gradient(to top left, #ffffff, #FFB6C1) !important;
+  background-image: linear-gradient(to top left, #a8dbeb,#bafad3) !important;
 
   color: black; /* Color del texto */
   padding: 20px; /* Espaciado alrededor del contenido */
@@ -396,6 +399,7 @@ body {
   flex: 1;
   padding-right: 40px;
   text-align: left;
+  text-align: center;
 }
 
 .introduction-image {
@@ -553,3 +557,9 @@ body {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta la sombra al pasar el ratón */
 }
 
+
+
+
+.team h2{
+  color: red !important;
+}

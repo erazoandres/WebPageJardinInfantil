@@ -128,8 +128,7 @@ body {
 .mission-image {
   flex: 1;
   max-width: 50%; /* Controla el tamaño de la imagen */
-
-
+  transform: translateX(100px) !important;
 }
 
 .mission-image img {
@@ -195,7 +194,7 @@ body {
 
 .aliados h2{
   padding-bottom: 15px;
-  color:#333
+  color:#2F4F4F !important;
 
 }
 
@@ -209,10 +208,6 @@ body {
 .aliados img:hover{
   opacity: 1;
   transition: .3s step-end;
-}
-
-.aliados img:hover h2{
-  color: #333;
 }
 
 
@@ -479,4 +474,29 @@ body {
   color: white;
   transform: rotateY(180deg); /* Inicialmente oculta el reverso */
   padding: 20px;
+}
+
+.services-container{
+
+  display: flex;
+  justify-content: center;
+}
+
+.services-section{
+  text-align: center;
+}
+
+
+.services-section h2{
+  color: #FFB347  !important;
+}
+
+.data{
+  color: #22c1c3  !important;
+  font-size: 1.1em;
+}
+
+
+.card-back{
+  color:white;
 }
