@@ -107,140 +107,7 @@ body {
 
 
 
-/* Estilos para la sección de servicios */
-.services-section {
-  margin-top: 20px;
-  padding: 50px 5%;
-  background-color: #f0f0f0;
-  background-image: url("images/fondo-web3.png");
-  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el área */
-  background-position: center top; /* Centra la imagen*/
-  background-repeat: no-repeat; /* Evita que la imagen se repita */
-   
-}
 
-.services-section h2 {
-  font-size: 2.5rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra negra ligera */
-  color: #22C1C3;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.services-section p {
-  font-size: 1.2rem;
-  color: #333;
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-/* Estilos del contenedor de servicios */
-.services-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; /* Alinea los elementos con espacio entre ellos */
-  gap: 20px; /* Espacio entre las tarjetas */
-  padding-top: 60px;
-}
-
-/* Estilos para las tarjetas de servicio individuales */
-.service-card {
-  cursor: default;
-  flex: 1 1 calc(25% - 20px); /* Ajusta el tamaño de cada tarjeta al 25% del contenedor con un margen */
-  background-color: #fff;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  transition: background-color 0.5s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones */
-}
-
-/* Estilo de los íconos dentro de las tarjetas */
-.service-card img {
-  width: 80px; /* Tamaño fijo para los íconos */
-  margin-bottom: 20px;
-  transition: transform 0.3s ease; /* Transición para transformaciones */
-}
-
-/* Animación de hover para los íconos */
-@keyframes iconBounce {
-  0%, 100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-}
-
-/* Estilos cuando se hace hover sobre la tarjeta */
-.service-card:hover {
-  background-color: #FFD700 ;
-  transform: translateY(-10px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
-.service-card:nth-child(1):hover {
-  background-color: #b283f0;
-}
-
-.service-card:nth-child(2):hover {
-  background-color: #FFD700 ;
-}
-
-.service-card:nth-child(3):hover {
-  background-color: #00CED1 ;
-}
-
-.service-card:nth-child(4):hover {
-  background-color: #00FF7F ;
-}
-
-.service-card:nth-child(5):hover {
-  background-color: #20B2AA  ;
-}
-
-
-/* Efecto de animación para los íconos cuando se hace hover sobre la tarjeta */
-.service-card:hover img {
-  animation: iconBounce 0.6s ease-in-out; /* Aplica la animación de rebote al hacer hover */
-}
-
-.service-card h3 {
-  font-size: 1.5rem;
-  color: #333;
-  margin-bottom: 10px;
-  transition: color 0.3s ease;
-}
-
-.service-card:hover h3 {
-  color: white;
-}
-
-.service-card p {
-  font-size: .9rem;
-  color: #666;
-  transition: font-weight 0.3s ease;
-}
-
-.service-card:hover p {
-  
-  color:white;
-  transition: .3s ease;
-}
-
-
-/* Media query para ajustar el diseño en pantallas más pequeñas */
-@media (max-width: 1024px) {
-  .service-card {
-    flex: 1 1 calc(50% - 20px); /* Cada tarjeta ocupará el 50% del contenedor en pantallas medianas */
-  }
-}
-
-@media (max-width: 768px) {
-  .service-card {
-    flex: 1 1 calc(100% - 20px); /* En pantallas pequeñas, las tarjetas ocuparán el 100% del contenedor */
-  }
-}
 
 
 /* Estilos para la sección de misión */
@@ -570,3 +437,46 @@ body {
 }
 
 
+/* Contenedor de la tarjeta */
+.service-card {
+  width: 300px;
+  height: 400px;
+  margin: 20px;
+  perspective: 1000px; /* Necesario para el efecto 3D */
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d; /* Permite la rotación 3D */
+  transition: transform 0.6s ease-in-out; /* Animación suave */
+}
+
+.service-card:hover .card-inner {
+  transform: rotateY(180deg); /* Gira la tarjeta al pasar el mouse o clic */
+}
+
+.card-front, .card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden; /* Oculta la cara trasera */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card-front {
+  background: #fff;
+}
+
+.card-back {
+  background: #22c1c3;
+  color: white;
+  transform: rotateY(180deg); /* Inicialmente oculta el reverso */
+  padding: 20px;
+}
