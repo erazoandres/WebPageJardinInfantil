@@ -437,7 +437,7 @@ body {
   width: 300px;
   height: 400px;
   margin: 20px;
-  perspective: 1000px; /* Necesario para el efecto 3D */
+  perspective: 1200px; /* Incrementa el efecto 3D */
 }
 
 .card-inner {
@@ -446,6 +446,8 @@ body {
   position: relative;
   transform-style: preserve-3d; /* Permite la rotación 3D */
   transition: transform 0.6s ease-in-out; /* Animación suave */
+  border-radius: 10px; /* Redondea la tarjeta completa */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Sombra más destacada */
 }
 
 .service-card:hover .card-inner {
@@ -466,37 +468,67 @@ body {
 }
 
 .card-front {
-  background: #fff;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-front img {
+  width: 120px; /* Ajusta el tamaño del logo */
+  height: auto; /* Mantiene las proporciones del logo */
+  display: block; /* Asegura que sea un bloque para centrarlo */
+  margin: 0 auto 10px; /* Centra horizontalmente con un margen inferior */
+  border-radius: 50%; /* Hace el logo circular */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Agrega sombra más prominente */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+}
+
+.card-front h3 {
+  margin-top: 10px;
+  color: #007acc;
+  font-size: 1.5em;
 }
 
 .card-back {
-  background: #22c1c3;
+  background: linear-gradient(135deg, #22c1c3, #ff6b6b);
   color: white;
   transform: rotateY(180deg); /* Inicialmente oculta el reverso */
   padding: 20px;
-}
-
-.services-container{
-
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  font-size: 1em;
+  line-height: 1.5;
 }
 
-.services-section{
+.card-back p {
+  margin: 0;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap; /* Permite que las tarjetas se acomoden en varias filas */
+  justify-content: center;
+  gap: 20px; /* Espaciado uniforme entre tarjetas */
+}
+
+.services-section {
   text-align: center;
+  padding: 40px 20px;
 }
 
-
-.services-section h2{
-  color: #FFB347  !important;
+.services-section h2 {
+  color: #ffb347 !important;
+  font-size: 2.5em;
+  margin-bottom: 10px;
 }
 
-.data{
-  color: #22c1c3  !important;
-  font-size: 1.1em;
+.data {
+  color: #22c1c3 !important;
+  font-size: 1.2em;
+  margin-bottom: 20px;
 }
 
-
-.card-back{
-  color:white;
+.card-back {
+  color: white;
 }
