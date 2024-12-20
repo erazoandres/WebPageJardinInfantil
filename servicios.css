@@ -431,127 +431,148 @@ body {
   } 
 }
 
+.services-section{
+  text-align: center;
+}
 
-/* Contenedor de la tarjeta */
+
+.services-section h2{
+  color:rgb(2, 219, 219);
+}
+
+.services-section p{
+  color:#065859;
+}
+
+
+/* Contenedor de las tarjetas de servicio */
+.services-container {
+  display: flex;
+  flex-wrap: wrap; /* Permite que las tarjetas se ajusten en filas */
+  justify-content: center; /* Asegura que las tarjetas estén distribuidas uniformemente */
+  gap: 40px; /* Espaciado entre las tarjetas */
+  margin-top: 50px;
+  width: 100%;
+  max-width: 950px; /* Limitar el ancho para mantener el diseño centrado */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Estilo de cada tarjeta de servicio */
 .service-card {
-  width: 300px;
-  height: 420px;
-  margin: 20px;
-  perspective: 1200px; /* Mejora el efecto 3D */
+  width: 280px;
+  height: 380px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(135deg, #ff9a8b, #f6d8af);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: scale(1.05); /* Efecto de aumento suave al pasar el mouse */
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.2); /* Aumenta la sombra para un efecto de profundidad */
 }
 
 .card-inner {
   width: 100%;
   height: 100%;
-  position: relative;
-  transform-style: preserve-3d; /* Permite rotación 3D */
-  transition: transform 0.6s ease-in-out; /* Animación suave */
-  border-radius: 15px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Sombra más prominente */
-}
-
-.service-card:hover .card-inner {
-  transform: rotateY(180deg); /* Efecto rotación al pasar el mouse */
-}
-
-.card-front, .card-back {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  backface-visibility: hidden; /* Oculta la cara trasera */
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
+  background-color: transparent; /* Asegura que el fondo degradado de la tarjeta se vea */
   border-radius: 15px;
   overflow: hidden;
+  position: relative;
 }
 
-/* Estilo de la parte frontal */
 .card-front {
-  background: linear-gradient(135deg, #00bcd4, #008394); /* Fondo degradado moderno */
+  position: relative; /* Relativo para permitir el posicionamiento absoluto de los elementos dentro */
   display: flex;
-  flex-direction: column;
-  color: #ffffff;
-  padding: 20px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card-front img {
-  width: 120px;
-  height: 120px;
-  border-radius: 90%; /* Logo circular */
-  margin-bottom: 20px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Sombra para resaltar el logo */
-  padding: 20px;
-}
-
-.card-front h3 {
-  font-size: 1.8em;
-  margin-top: 10px;
-  letter-spacing: 1px;
-  font-weight: bold;
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3); /* Sombra de texto */
-}
-
-/* Estilo de la parte trasera */
-.card-back {
-  background: #fef9ef; /* Fondo pastel suave */
-  color: #333; /* Texto oscuro para mejor contraste */
-  transform: rotateY(180deg); /* Oculta la parte trasera inicialmente */
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
-  line-height: 1.6;
-  font-size: 1em;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* Oculta la cara al voltear la tarjeta */
+  z-index: 2; /* Asegura que la parte frontal esté por encima */
 }
 
+/* Estilo de la imagen dentro de la tarjeta */
+.card-inner img {
+  width: 50%;  /* Reducir aún más el tamaño de la imagen al 50% */
+  height: 50%; /* Reducir aún más el tamaño de la imagen al 50% */
+  object-fit: contain; /* La imagen se ajusta al contenedor sin cortar, manteniendo la proporción */
+  transition: opacity 0.3s ease, transform 0.3s ease-in-out; /* Suaviza la desaparición y el zoom */
+}
+
+.service-card:hover .card-inner img {
+  opacity: 0; /* La imagen se desvanece al hacer hover */
+  transform: scale(1.05); /* Efecto de aumento suave de la imagen */
+}
+
+/* Efecto de texto al interior de la tarjeta */
+.card-inner h3 {
+  position: absolute; /* El título se posiciona sobre la imagen */
+  top: 10%; /* Coloca el título en la parte superior */
+  left: 50%;
+  transform: translateX(-50%); /* Centra el título */
+  font-size: 1.8em;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.service-card:hover .card-inner h3 {
+  opacity: 0; /* El título desaparece al hacer hover */
+}
+
+/* Estilo de la parte posterior de la tarjeta */
+.card-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #b2e5f6;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  border-radius: 15px;
+}
+
+.service-card:hover .card-back {
+  opacity: 1;
+  transform: translateY(0); /* Revela la parte trasera de la tarjeta */
+}
+
+/* Estilo del contenido posterior */
 .card-back h3 {
   font-size: 1.5em;
-  margin-bottom: 15px;
-  color: #ff7a59; /* Color cálido y destacado */
+  margin-bottom: 10px;
 }
 
 .card-back p {
-  color: #555; /* Contraste suave */
-  margin: 0;
-}
-
-/* Contenedor de servicios */
-.services-container {
-  display: flex;
-  flex-wrap: wrap; /* Ajusta tarjetas en filas */
-  justify-content: center;
-  gap: 30px; /* Espaciado uniforme */
-}
-
-/* Encabezado de la sección */
-.services-section {
+  font-size: 1.1em;
   text-align: center;
-  padding: 40px 20px;
-}
-
-.services-section h2 {
-  font-size: 2.5em;
-  color: #ff7a59; /* Color atractivo */
-  margin-bottom: 20px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.data {
-  color: #00bcd4; /* Azul moderno */
-  font-size: 1.2em;
-  margin-bottom: 30px;
   line-height: 1.5;
 }
 
-/* Responsividad */
+/* Media Queries para dispositivos más pequeños */
 @media (max-width: 768px) {
+  .services-container {
+    justify-content: center; /* Centra las tarjetas en pantallas pequeñas */
+  }
+
   .service-card {
-    width: 100%;
-    height: 350px;
+    width: 90%; /* Las tarjetas ocuparán más espacio en dispositivos pequeños */
+    margin: 15px 0;
   }
 }
-
