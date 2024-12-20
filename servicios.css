@@ -480,15 +480,15 @@ body {
 .card-front img {
   width: 120px;
   height: 120px;
-  border-radius: 50%; /* Logo circular */
+  border-radius: 90%; /* Logo circular */
   margin-bottom: 20px;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Sombra para resaltar el logo */
+  padding: 20px;
 }
 
 .card-front h3 {
   font-size: 1.8em;
   margin-top: 10px;
-  text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: bold;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3); /* Sombra de texto */
