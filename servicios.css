@@ -527,3 +527,29 @@ body {
     font-size: 2em;
   }
 }
+
+
+/* Colores específicos para cada tarjeta */
+.service-card {
+  background: linear-gradient(135deg, #ffb3b3, #f1e0e0); /* Color pastel suave */
+}
+
+.service-card:nth-child(1) {
+  background: linear-gradient(135deg, #ffb3cc, #ffd9b3); /* Pastel rosa y durazno */
+}
+
+.service-card:nth-child(2) {
+  background: linear-gradient(135deg, #b3e0ff, #d1eaff); /* Pastel azul claro */
+}
+
+.service-card:nth-child(3) {
+  background: linear-gradient(135deg, #b3ffb3, #d9f5d9); /* Pastel verde */
+}
+
+.service-card:nth-child(4) {
+  background: linear-gradient(135deg, #ffd9ff, #f2ccff); /* Pastel lavanda y morado claro */
+}
+
+.service-card:nth-child(5) {
+  background: linear-gradient(135deg, #fff2cc, #ffffb3); /* Pastel amarillo claro y beige */
+}
