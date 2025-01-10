@@ -430,6 +430,8 @@ body {
     font-size: 14px;
   } 
 }
+
+
 .services-section {
   text-align: center;
   padding: 50px 20px; /* Añadir algo de padding para mejorar la separación */
@@ -445,13 +447,6 @@ body {
 
 .services-section h2:hover {
   color: rgb(255, 159, 64); /* Color vibrante al pasar el ratón */
-}
-
-.services-section p {
-  color: #065859;
-  font-size: 1.1em;
-  line-height: 1.8;
-  margin-bottom: 40px;
 }
 
 /* Contenedor de las tarjetas de servicio */
@@ -477,6 +472,9 @@ body {
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
   background: linear-gradient(135deg, #ff9a8b, #f6d8af);
   transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Asegura que el contenido esté al principio */
 }
 
 .service-card:hover {
@@ -487,90 +485,31 @@ body {
 
 .card-inner {
   width: 100%;
-  height: 100%;
+  height: 80%; /* El video ocupa el 80% de la tarjeta */
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   background-color: transparent;
-  border-radius: 15px;
-  overflow: hidden;
   position: relative;
 }
 
-.card-front {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.card-inner video {
   width: 100%;
   height: 100%;
-  backface-visibility: hidden;
-  z-index: 2;
+  object-fit: cover;
 }
 
-.card-inner img {
-  width: 60%; /* Tamaño ajustado para una mejor presentación */
-  height: 60%;
-  object-fit: contain;
-  transition: opacity 0.3s ease, transform 0.3s ease-in-out;
-}
-
-.service-card:hover .card-inner img {
-  opacity: 0;
-  transform: scale(1.05);
-}
-
-.card-inner h3 {
-  position: absolute;
-  top: 10%;
-  left: 50%;
-  transform: translateX(-50%);
+/* Título fuera del contenedor de video, en la parte inferior de la tarjeta */
+.card-title {
   font-size: 1.8em;
   font-weight: 600;
   color: #fff;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-  opacity: 1;
-  transition: opacity 0.3s ease;
-}
-
-.service-card:hover .card-inner h3 {
-  opacity: 0;
-}
-
-.card-back {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #b2e5f6;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  opacity: 0;
-  transform: translateY(100%);
-  transition: transform 0.3s ease, opacity 0.3s ease;
-  border-radius: 15px;
-}
-
-.service-card:hover .card-back {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.card-back h3 {
-  font-size: 1.5em;
-  margin-bottom: 10px;
-}
-
-.card-back p {
-  font-size: 1.1em;
-  text-align: center;
-  line-height: 1.5;
-  font-family: 'Arial', sans-serif;
-  color: #333; /* Mayor contraste en el texto */
+  bottom: 10px; /* Coloca el título al fondo de la tarjeta */
+  left: 50%;
+  transform: translateX(-50%) rotate(-5deg); /* Inclina ligeramente el título */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  z-index: 2; /* Asegura que el texto esté encima del fondo */
 }
 
 /* Media Queries para dispositivos más pequeños */

@@ -166,6 +166,11 @@ body {
   background-image: url("images/fondoweb6.png");
   background-size:cover; /* Ajusta el tamaño de la imagen para cubrir el área */
   background-repeat: no-repeat; /* Evita que la imagen se repita */
+  
+  display: flex;
+  justify-content:right;
+  flex-direction: column;
+
 }
 
 
