@@ -430,30 +430,39 @@ body {
     font-size: 14px;
   } 
 }
-
-.services-section{
+.services-section {
   text-align: center;
+  padding: 50px 20px; /* Añadir algo de padding para mejorar la separación */
 }
 
-
-.services-section h2{
-  color:rgb(2, 219, 219);
+.services-section h2 {
+  color: rgb(0, 174, 192); /* Un color más suave pero aún vibrante */
+  font-family: 'Arial', sans-serif;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  transition: color 0.3s ease;
 }
 
-.services-section p{
-  color:#065859;
+.services-section h2:hover {
+  color: rgb(255, 159, 64); /* Color vibrante al pasar el ratón */
 }
 
+.services-section p {
+  color: #065859;
+  font-size: 1.1em;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
 
 /* Contenedor de las tarjetas de servicio */
 .services-container {
   display: flex;
-  flex-wrap: wrap; /* Permite que las tarjetas se ajusten en filas */
-  justify-content: center; /* Asegura que las tarjetas estén distribuidas uniformemente */
-  gap: 40px; /* Espaciado entre las tarjetas */
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
   margin-top: 50px;
   width: 100%;
-  max-width: 950px; /* Limitar el ancho para mantener el diseño centrado */
+  max-width: 950px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -467,12 +476,13 @@ body {
   border-radius: 15px;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
   background: linear-gradient(135deg, #ff9a8b, #f6d8af);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
 }
 
 .service-card:hover {
-  transform: scale(1.05); /* Efecto de aumento suave al pasar el mouse */
-  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.2); /* Aumenta la sombra para un efecto de profundidad */
+  transform: scale(1.05);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.2);
+  filter: brightness(1.1); /* Mejora el brillo al pasar el mouse */
 }
 
 .card-inner {
@@ -481,42 +491,40 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: transparent; /* Asegura que el fondo degradado de la tarjeta se vea */
+  background-color: transparent;
   border-radius: 15px;
   overflow: hidden;
   position: relative;
 }
 
 .card-front {
-  position: relative; /* Relativo para permitir el posicionamiento absoluto de los elementos dentro */
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
-  backface-visibility: hidden; /* Oculta la cara al voltear la tarjeta */
-  z-index: 2; /* Asegura que la parte frontal esté por encima */
+  backface-visibility: hidden;
+  z-index: 2;
 }
 
-/* Estilo de la imagen dentro de la tarjeta */
 .card-inner img {
-  width: 50%;  /* Reducir aún más el tamaño de la imagen al 50% */
-  height: 50%; /* Reducir aún más el tamaño de la imagen al 50% */
-  object-fit: contain; /* La imagen se ajusta al contenedor sin cortar, manteniendo la proporción */
-  transition: opacity 0.3s ease, transform 0.3s ease-in-out; /* Suaviza la desaparición y el zoom */
+  width: 60%; /* Tamaño ajustado para una mejor presentación */
+  height: 60%;
+  object-fit: contain;
+  transition: opacity 0.3s ease, transform 0.3s ease-in-out;
 }
 
 .service-card:hover .card-inner img {
-  opacity: 0; /* La imagen se desvanece al hacer hover */
-  transform: scale(1.05); /* Efecto de aumento suave de la imagen */
+  opacity: 0;
+  transform: scale(1.05);
 }
 
-/* Efecto de texto al interior de la tarjeta */
 .card-inner h3 {
-  position: absolute; /* El título se posiciona sobre la imagen */
-  top: 10%; /* Coloca el título en la parte superior */
+  position: absolute;
+  top: 10%;
   left: 50%;
-  transform: translateX(-50%); /* Centra el título */
+  transform: translateX(-50%);
   font-size: 1.8em;
   font-weight: 600;
   color: #fff;
@@ -526,10 +534,9 @@ body {
 }
 
 .service-card:hover .card-inner h3 {
-  opacity: 0; /* El título desaparece al hacer hover */
+  opacity: 0;
 }
 
-/* Estilo de la parte posterior de la tarjeta */
 .card-back {
   position: absolute;
   top: 0;
@@ -550,10 +557,9 @@ body {
 
 .service-card:hover .card-back {
   opacity: 1;
-  transform: translateY(0); /* Revela la parte trasera de la tarjeta */
+  transform: translateY(0);
 }
 
-/* Estilo del contenido posterior */
 .card-back h3 {
   font-size: 1.5em;
   margin-bottom: 10px;
@@ -563,16 +569,22 @@ body {
   font-size: 1.1em;
   text-align: center;
   line-height: 1.5;
+  font-family: 'Arial', sans-serif;
+  color: #333; /* Mayor contraste en el texto */
 }
 
 /* Media Queries para dispositivos más pequeños */
 @media (max-width: 768px) {
   .services-container {
-    justify-content: center; /* Centra las tarjetas en pantallas pequeñas */
+    justify-content: center;
   }
 
   .service-card {
-    width: 90%; /* Las tarjetas ocuparán más espacio en dispositivos pequeños */
+    width: 90%;
     margin: 15px 0;
+  }
+
+  .services-section h2 {
+    font-size: 2em;
   }
 }
