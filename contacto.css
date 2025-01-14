@@ -11,6 +11,8 @@ body {
   line-height: 1.6;
   height: 100vh;
   overflow: hidden;
+
+
 }
 
 .header {
@@ -119,14 +121,14 @@ body {
   max-width: 250px; /* Máximo ancho del formulario */
   padding: 15px; /* Espacio interno más compacto */
   background: #f9f9f9; /* Fondo gris claro para un look moderno */
-
+  color:#5D6363;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra más sutil */
 }
 
 .contact-form h3 {
   margin-bottom: 15px;
 
-  color: #333; /* Color de texto oscuro */
+  color:#5D6363;
 }
 
 .contact-form .form-group {
@@ -203,12 +205,13 @@ body {
 .map-container h3 {
   margin-top: 0;
   padding-top: 0;
-  color: #333; /* Color de texto oscuro */
+  color: #5D6363; /* Color de texto oscuro */
 }
 
 .contact-details p {
 
   margin-bottom: 8px; /* Espacio reducido entre párrafos */
+  color:#5D6363 ; 
 }
 
 .map-container iframe {

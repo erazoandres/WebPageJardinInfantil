@@ -361,7 +361,7 @@ body {
 
 .profile-info h3 {
   font-size: 1.8rem;
-  color: #333;
+  color: #293737 !important;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra al texto */
   margin-bottom: 10px;
 }
@@ -407,6 +407,8 @@ body {
   text-align: center;
 }
 
+
+
 .introduction-image {
   flex: 1;
   margin-top: 2%;
@@ -420,6 +422,7 @@ body {
 .introduction-text p {
   font-size: 1.2em;
   text-align: justify;
+  color:#293737
 }
 
 .introduction-image img {
