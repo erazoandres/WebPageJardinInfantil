@@ -221,6 +221,7 @@ body {
   padding-top: 0;
 }
 
+
 /* Responsividad para pantallas pequeñas */
 @media (max-width: 768px) {
   .contact-form,
