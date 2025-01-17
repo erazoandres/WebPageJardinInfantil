@@ -188,7 +188,8 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   row-gap: 5px; /* Esto reduce el espacio entre las filas */
-  justify-items: center;
+  justify-items: center;  /* Centra los ítems dentro de cada celda */
+  justify-content: center; /* Centra las columnas de la cuadrícula */
   padding-top: 20px;
 }
 
@@ -204,16 +205,6 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-
-@media (min-width: 1024px) { /* Este tamaño es típico para pantallas de PC */
-  .gallery-item:nth-child(4) {
-    left: 130px;
-  }
-
-  .gallery-item:nth-child(6) {
-    right: 200px;
-  }
-}
 
 
 
