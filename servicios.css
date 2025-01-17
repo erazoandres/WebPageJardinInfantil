@@ -510,11 +510,19 @@ body {
   font-weight: 600;
   color: #fff;
   position: absolute;
-  bottom: 10px; /* Coloca el título al fondo de la tarjeta */
+  bottom: 20px; /* Coloca el título al fondo de la tarjeta */
   left: 50%;
   transform: translateX(-50%) rotate(-5deg); /* Inclina ligeramente el título */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
   z-index: 2; /* Asegura que el texto esté encima del fondo */
+
+}
+
+.card-title h4{
+
+  line-height: 1em;
+  font-size: .7em;
+
 }
 
 /* Media Queries para dispositivos más pequeños */
