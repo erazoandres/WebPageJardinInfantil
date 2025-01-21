@@ -74,33 +74,6 @@
     font-size: 1.8rem;
     color: #fff;
   }
-  
-  @media (max-width: 768px) {
-    .nav-links {
-      
-      
-      top: 60px;
-      left: 0;
-      right: 0;
-      
-      flex-direction: row;
-      align-items: center;
-      padding: 15px 0;
-      z-index: 9; /* Asegura que el menú se muestre sobre el contenido */
-    }
-    
-
-  
-    .nav-links.show {
-      display: flex; /* Muestra el menú cuando la clase 'show' está presente */
-    }
-  
-    .menu-toggle {
-      display: block; /* Muestra el botón de menú hamburguesa en pantallas pequeñas */
-    }
-  }
-
-  /* Estilos generales para los botones flotantes */
 
   
   /* Contenedor de los íconos flotantes */
@@ -387,4 +360,36 @@
     padding: 10px;
 }
 
+
+
+
+
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+  .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      justify-content: center;
+      align-items: center;
+      top: 60px;
+      right: 0;
+      background-color: #00ccff;
+      width: 100%;
+      padding: 20px 0;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      z-index: 999;
+  }
+
+  .nav-links.show {
+      display: flex;
+  }
+
+  .menu-toggle {
+      display: block;
+      padding-right: 20px;
+  }
+  
+}
 

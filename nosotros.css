@@ -73,6 +73,7 @@ body {
   cursor: pointer;
   font-size: 1.8rem;
   color: #fff;
+  padding: 20px;
 }
 
 @media (max-width: 768px) {

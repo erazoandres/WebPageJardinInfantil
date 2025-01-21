@@ -23,20 +23,33 @@
 <body>
 
     
-    <header class="header">
+  <header class="header">
       <nav class="navbar">
-        
           <div class="logo">
               <a href="index.html"><img src="images/logo.svg" alt="Logo"></a>
           </div>
-          <ul class="nav-links">
+          <div class="menu-toggle" id="mobile-menu">
+              ☰ <!-- Ícono de menú hamburguesa -->
+          </div>
+          <ul class="nav-links" id="nav-links">
               <li><a href="index.html">Inicio</a></li>
               <li><a href="nosotros.html">Nosotros</a></li>
               <li><a href="servicios.html">Servicios</a></li>
               <li><a href="contacto.html">Contacto</a></li>
           </ul>
       </nav>
-    </header>
+  </header>
+
+  <script>
+      // Lógica para el menú hamburguesa
+      const menuToggle = document.getElementById('mobile-menu');
+      const navLinks = document.getElementById('nav-links');
+
+      menuToggle.addEventListener('click', () => {
+          navLinks.classList.toggle('show');
+      });
+  </script>
+
     
 
     <section class="contact-section" style="background-image: url(images/fachada.jpg) ; background-position: center; background-size:contain; background-repeat: repeat-x;background-position-x: right;">
