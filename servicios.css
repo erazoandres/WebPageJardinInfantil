@@ -142,8 +142,12 @@ body {
 }
 
 .mission-text {
-  flex: 1;
+
+  display: flex;
+  justify-content: center;
   max-width: 50%; /* Controla el tamaño del texto */
+  flex-direction: column;
+
 
 }
 
@@ -165,7 +169,6 @@ body {
   font-weight: bolder;
   color: #5e4f4fd6;
   line-height: 1.6;
-  transform: translateX(-150px);
   overflow: hidden;
 }
 
@@ -479,6 +482,7 @@ body {
   transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
   display: flex;
   flex-direction: column;
+
   justify-content: flex-start; /* Asegura que el contenido esté al principio */
 }
 
@@ -506,23 +510,23 @@ body {
 
 /* Título fuera del contenedor de video, en la parte inferior de la tarjeta */
 .card-title {
-  font-size: 1.8em;
-  font-weight: 600;
-  color: #fff;
-  position: absolute;
-  bottom: 20px; /* Coloca el título al fondo de la tarjeta */
-  left: 50%;
-  transform: translateX(-50%) rotate(-5deg); /* Inclina ligeramente el título */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-  z-index: 2; /* Asegura que el texto esté encima del fondo */
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
 .card-title h4{
 
   line-height: 1em;
-  font-size: .7em;
-
+  font-size: 1.4em;
+  font-weight: 600;
+  padding-top: 30px;
+  /* transform: translateX(-50%) rotate(-5deg); Inclina ligeramente el título */
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.6);
+  z-index: 2; /* Asegura que el texto esté encima del fondo */
+  color:rgb(0, 174, 192);
 }
 
 /* Media Queries para dispositivos más pequeños */
@@ -566,3 +570,9 @@ body {
 .service-card:nth-child(5) {
   background: linear-gradient(135deg, #fff2cc, #ffffb3); /* Pastel amarillo claro y beige */
 }
+
+
+.service-card:nth-child(3) h4{
+  font-size: 1em;
+}
+
