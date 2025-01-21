@@ -9,82 +9,63 @@
   <script src="https://unpkg.com/scrollreveal"></script>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 
-
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Dosis:wght@200..800&display=swap" rel="stylesheet">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Dosis:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-          // Animación del texto desde la derecha hacia el centro
-          ScrollReveal().reveal('.introduction-text', {
-            origin: 'right',
-            distance: '200px',
-            duration: 600,
-            easing: 'ease-in-out',
-            reset: true,
-          });
+      // Animación del texto desde la derecha hacia el centro
+      ScrollReveal().reveal('.introduction-text', {
+        origin: 'right',
+        distance: '200px',
+        duration: 600,
+        easing: 'ease-in-out',
+        reset: true,
+      });
 
-          // Animación de la imagen desde la izquierda hacia el centro
-          ScrollReveal().reveal('.introduction-image', {
-            origin: 'left',
-            distance: '200px',
-            duration: 1200,
-            easing: 'ease-in-out',
-            reset: true,
-          });
-        });
+      // Animación de la imagen desde la izquierda hacia el centro
+      ScrollReveal().reveal('.introduction-image', {
+        origin: 'left',
+        distance: '200px',
+        duration: 1200,
+        easing: 'ease-in-out',
+        reset: true,
+      });
+    });
   </script>
-  
-  
-
 </head>
+
 <body>
   <header class="header">
     <nav class="navbar">
-        <div class="logo">
-            <a href="index.html"><img src="images/logo.svg" alt="Logo"></a>
-        </div>
-        <div class="menu-toggle" id="mobile-menu">
-            ☰ <!-- Ícono de menú hamburguesa -->
-        </div>
-        <ul class="nav-links" id="nav-links">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="nosotros.html">Nosotros</a></li>
-            <li><a href="servicios.html">Servicios</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
+      <div class="logo">
+        <a href="index.html"><img src="images/logo.svg" alt="Logo"></a>
+      </div>
+      <div class="menu-toggle" id="mobile-menu">☰</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
     </nav>
-</header>
+  </header>
 
-<script>
+  <script>
     // Lógica para el menú hamburguesa
     const menuToggle = document.getElementById('mobile-menu');
     const navLinks = document.getElementById('nav-links');
 
     menuToggle.addEventListener('click', () => {
-        navLinks.classList.toggle('show');
+      navLinks.classList.toggle('show');
     });
-</script>
-
+  </script>
 
   <!-- Sección de Parallax con Video -->
   <section class="parallax">
-
     <div style="position: absolute;">
-      <img src="images/escalando.jpg" alt = "escalando">
+      <img src="images/escalando.jpg" alt="escalando">
     </div>
-  
 
     <div class="overlay">
       <h1>Centro Infantil <span style="color: #00ccff;"> <br> Taller Tia Gaby</span></h1>
@@ -100,23 +81,19 @@
       <div class="introduction-text">
         <h2><span style="color: #0093AF;">Quienes somos</span></h2>
         <p>
-          Desde pequeña supe que mi vocación era estar cerca de los niños y apoyar a su desarrollo.
-          En el Taller Tía Gaby, he cumplido ese sueño, ayudando a cientos de pequeños a crecer en un ambiente lleno de amor, aprendizaje y respeto. 
+          Desde pequeña supe que mi vocación era estar cerca de los niños y apoyar a su desarrollo. En el Taller Tía Gaby, he cumplido ese sueño, ayudando a cientos de pequeños a crecer en un ambiente lleno de amor, aprendizaje y respeto.
           Mi misión ha sido clara: ofrecer a los niños herramientas emocionales y cognitivas que les permitan conocerse, autorregularse, fortalecer su autoestima y construir un futuro lleno de éxito y felicidad.
           Somos un equipo de educadores apasionados, que trabajamos por crear un ambiente en el que los niños se sientan valorados mientras desarrollan sus habilidades académicas, motrices y socioemocionales.
-          Nuestro enfoque incluye estrategias de disciplina positiva que fomentan la autorregulación emocional, la socialización y el trabajo en equipo. 
-          Brindamos una educación bilingüe de excelencia a niños de 1.5 a 5 años, preparándolos para ingresar a los mejores colegios particulares de Quito, Cumbayá y todo el país. 
-
+          Nuestro enfoque incluye estrategias de disciplina positiva que fomentan la autorregulación emocional, la socialización y el trabajo en equipo.
+          Brindamos una educación bilingüe de excelencia a niños de 1.5 a 5 años, preparándolos para ingresar a los mejores colegios particulares de Quito, Cumbayá y todo el país.
         </p>
       </div>
       <div class="introduction-image">
-        <img src="images/gaby.jpg" alt="Jardín Infantil" class=".imagen-diagonal">
-
+        <img src="images/gaby.jpg" alt="Jardín Infantil">
         <div class="image-caption">
           <p>Gaby Guzmán</p>
           <p>DIRECTORA</p>
         </div>
-
       </div>
     </div>
   </section>
@@ -129,16 +106,13 @@
         <img src="images/huerto.png" alt="Imagen 1">
         <div class="description">
           En nuestro huerto enseñamos a los niños a cultivar sus propios vegetales🌿, así, aprenden a querer a los seres vivos y la naturaleza. 🌍
-          <br>
           Cuidar de una planta les enseña responsabilidad, ¡creando ilusión y el aprendizaje de cultivar sus propios vegetales! 🌱
-
         </div>
       </div>
       <div class="gallery-item">
         <img src="images/carpa.png" alt="Imagen 2">
         <div class="description">
           🌟 Creamos un ambiente de ilusión y fantasía donde los niños se sientan seguros y felices, para que cada día regresen con ganas de más.
-          <br>
           🏡 La adaptación que realizamos es muy respetuosa, para crear desde el inicio un ambiente cálido y familiar, así pronto se sienten tan a gusto como en su casa.
         </div>
       </div>
@@ -146,95 +120,57 @@
         <img src="images/ligas.png" alt="Imagen 3">
         <div class="description">
           🌱 Cultivamos la inocencia de cada niño para nutrir su empatía, sensibilidad y valores, creando una base sólida para poder enfrentar cada desafío.
-          <br>
           🌍 Queremos que exploren el mundo con curiosidad y alegría, sabiendo que cuentan con un entorno que los apoya y protege.
-
-          </div>
-      </div>
-
-
-    </div>
-    <section class="gallery-section" style="background: none;">
-    <div class="gallery">
-
-      <div class="gallery-item" style="width: 70%;">
-        <img src="images/motricidad.png" alt="Imagen 4">
-        <div class="description">
-          Los primeros años son cruciales para establecer las bases de habilidades motoras, equilibrio y coordinación. 🧠
-          🖐️ Potenciamos estas destrezas, ayudándoles a crecer con seguridad y confianza.
-          🏃‍♀️ Un entorno que les motiva a explorar libremente, promoviendo el aprendizaje activo y autónomo. 
-
         </div>
       </div>
-      <div class="gallery-item"  style="width: 70%;">
-        <img src="images/patio.png" alt="Imagen 6">
-        <div class="description">
-          👧👦 Imagina un hogar donde los niños aprenden empatía, generosidad y respeto. 
-          🌈 Con un enfoque que fomenta la curiosidad, creando una relación positiva con el conocimiento. Haciendo del amor el pilar de la educación, ¿te gustaría que lo eduquen en un lugar así? 
-
-      </div>
-
     </div>
-
   </section>
 
   <!-- Sección de Perfiles -->
-  <section class="profiles-section" style="background-color: transparent;">
-      <h2>Conoce a nuestro equipo</h2>
-      <div class="profiles-grid">
-      <!-- Perfil 1 -->
+  <section class="profiles-section">
+    <h2>Conoce a nuestro equipo</h2>
+    <div class="profiles-grid">
       <div class="profile-item">
-          <div class="profile-image">
-          <img src="images/profe3.jpg" style="border-bottom: 5px solid #4682B4   ;" alt="Persona 1">
-          </div>
-          <div class="profile-info">
+        <div class="profile-image">
+          <img src="images/profe3.jpg" style="border-bottom: 5px solid #4682B4;" alt="Persona 1">
+        </div>
+        <div class="profile-info">
           <h3>Tía Paulina Peñafiel</h3>
-<!--         <p>Descripción breve de la persona 1. Profesional con experiencia en... apasionado por...</p> -->
-          </div>
+        </div>
       </div>
 
-      <!-- Perfil 2 -->
       <div class="profile-item">
-          <div class="profile-image">
+        <div class="profile-image">
           <img src="images/profe2.jpg" style="border-bottom: 5px solid aqua;" alt="Persona 2">
-          </div>
-          <div class="profile-info">
-          <h3>Tía Nila Montalvo </h3>
-<!--          <p>Descripción breve de la persona 2. Especialista en... comprometido con...</p>  -->
-          </div>
+        </div>
+        <div class="profile-info">
+          <h3>Tía Nila Montalvo</h3>
+        </div>
       </div>
 
-      <!-- Perfil 3 -->
       <div class="profile-item">
-          <div class="profile-image">
+        <div class="profile-image">
           <img src="images/profe1.jpg" style="border-bottom: 5px solid blueviolet;" alt="Persona 3">
-          </div>
-          <div class="profile-info">
-          <h3>Tía Lorena Arroyo </h3>
-<!--      <p>Descripción breve de la persona 3. Especialista en... comprometido con...</p> -->
-          </div>
+        </div>
+        <div class="profile-info">
+          <h3>Tía Lorena Arroyo</h3>
+        </div>
       </div>
 
-      <!-- Perfil 4 -->
       <div class="profile-item">
-          <div class="profile-image">
-          <img src="images/profe4.jpg" style="border-bottom: 5px solid #00FF7F;" alt="Persona 3">
-          </div>
-          <div class="profile-info">
+        <div class="profile-image">
+          <img src="images/profe4.jpg" style="border-bottom: 5px solid #00FF7F;" alt="Persona 4">
+        </div>
+        <div class="profile-info">
           <h3>Tía Maida Cañete</h3>
- <!--         <p>Descripción breve de la persona 4. Especialista en... comprometido con...</p> -->
-          </div>
+        </div>
       </div>
-      </div>
+    </div>
   </section>
-
 
   <section class="team">
     <img src="images/team.jpg" alt="">
-    <h2> Educamos con amor &#x1FAF6;</h2>
+    <h2>Educamos con amor &#x1FAF6;</h2>
   </section>
-  
-
-
 </body>
 </html>
