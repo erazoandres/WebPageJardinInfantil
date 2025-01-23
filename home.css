@@ -367,6 +367,16 @@
 
 /* Estilos para pantallas pequeñas */
 @media (max-width: 768px) {
+
+
+  .hero-content h1 , span{
+    font-size: 70px !important;
+  }
+
+  .hero-content{
+    font-size: .8em;
+  }
+
   .nav-links {
       display: none;
       flex-direction: column;
@@ -390,6 +400,7 @@
       display: block;
       padding-right: 20px;
   }
+
   
 }
 
