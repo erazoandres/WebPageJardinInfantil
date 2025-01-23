@@ -566,6 +566,17 @@ body {
   .services-section h2 {
     font-size: 2em;
   }
+
+  .aliados{
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  .aliados-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 

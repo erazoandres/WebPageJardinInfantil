@@ -137,6 +137,7 @@ body {
 }
 
 .overlay h1 {
+
   margin-bottom: 20px;
   color: #FF0080; /* Color rosa vibrante */
   text-shadow: 
@@ -386,6 +387,11 @@ body {
 
 /* Media query para pantallas pequeñas */
 @media (max-width: 768px) {
+
+  .overlay h1{
+    padding-top: 10%;
+  }
+
   .profiles-grid {
     grid-template-columns: 1fr; /* En pantallas pequeñas, cada perfil ocupará toda la fila */
   }
@@ -408,7 +414,7 @@ body {
   align-items: center;
   justify-content: space-around;
   max-width: 1200px;
-  margin: 50px 0;
+
   padding: 45px 20px;
 }
 
@@ -476,6 +482,26 @@ body {
 
 /* Media query para pantallas pequeñas (hasta 768px) */
 @media (max-width: 768px) {
+
+  .overlay h1 , span {
+    font-size: .9em;
+  }
+
+  introduction-section{
+    padding-top: 0;
+  }
+
+
+  .overlay p{
+    font-size: .9em;
+  }
+
+
+
+  .introduction-text{
+    padding: 0px 20px;
+  }
+
   .introduction-section {
     padding: 30px 5%; /* Reduce aún más el padding lateral */
   }
