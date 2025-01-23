@@ -84,6 +84,10 @@ body {
 }
 
 @media (max-width: 768px) {
+  html, body {
+    overflow-x: hidden;
+    /* Esto evita el desplazamiento horizontal en toda la página */
+  }
   .nav-links {
     display: none; /* Oculta el menú en pantallas pequeñas */
     position: absolute;
@@ -175,6 +179,10 @@ body {
 
 /* Media query para pantallas pequeñas */
 @media (max-width: 768px) {
+  html, body {
+    overflow-x: hidden;
+    /* Esto evita el desplazamiento horizontal en toda la página */
+  }
   .mission-content {
     flex-direction: column; /* En pantallas pequeñas, coloca la imagen y el texto uno debajo del otro */
   }
@@ -424,6 +432,10 @@ body {
 
 /* Estilo para pantallas más pequeñas */
 @media (max-width: 768px) {
+  html, body {
+    overflow-x: hidden;
+    /* Esto evita el desplazamiento horizontal en toda la página */
+  }
   .carousel-prev, .carousel-next {
     width: 25px;
     height: 25px;
@@ -433,6 +445,10 @@ body {
 
 /* Estilo para pantallas muy pequeñas */
 @media (max-width: 480px) {
+  html, body {
+    overflow-x: hidden;
+    /* Esto evita el desplazamiento horizontal en toda la página */
+  }
   .carousel-prev, .carousel-next {
     width: 20px;
     height: 20px;
@@ -532,6 +548,12 @@ body {
 
 /* Media Queries para dispositivos más pequeños */
 @media (max-width: 768px) {
+
+  html, body {
+    overflow-x: hidden;
+    /* Esto evita el desplazamiento horizontal en toda la página */
+  }
+
   .services-container {
     justify-content: center;
   }
