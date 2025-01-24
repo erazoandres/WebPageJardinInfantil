@@ -7,13 +7,13 @@
 
 body {
   margin: 0;
-  padding-top: 60px; /* Agrega un relleno para compensar la altura de la barra de navegación */
+  padding-top: 60px; /* Compensa la altura de la barra de navegación */
   line-height: 1.6;
-  height: 100vh;
-  overflow: hidden;
-
-
+  height: auto; /* Asegura que el cuerpo crezca con el contenido */
+  overflow-y: auto; /* Permite el scroll en el eje Y */
+  overflow-x: hidden; /* Mantiene oculto el scroll horizontal si no lo necesitas */
 }
+
 
 .header {
   position: fixed;
@@ -127,9 +127,20 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra más sutil */
 }
 
-.contact-form h3 {
-  margin-bottom: 15px;
+@media (min-width: 768px) {
+  body {
+    overflow-y: hidden; /* Elimina el scroll vertical */
+    height: 100vh; /* Asegura que el contenido ocupe el 100% de la ventana */
+  }
 
+  
+
+}
+
+
+
+.contact-form h3 {
+  font-size: 2em !important;
   color:#5D6363;
 }
 
@@ -212,6 +223,7 @@ body {
 
 .contact-details p {
 
+  font-size: .9em !important;
   margin-bottom: 8px; /* Espacio reducido entre párrafos */
   color:#5D6363 ; 
 }
