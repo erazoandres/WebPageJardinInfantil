@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+.contact-container{
+  display: flex;
+  justify-content: center;  
+}
+
 body {
   margin: 0;
   padding-top: 60px; /* Compensa la altura de la barra de navegación */
@@ -12,6 +17,7 @@ body {
   height: auto; /* Asegura que el cuerpo crezca con el contenido */
   overflow-y: auto; /* Permite el scroll en el eje Y */
   overflow-x: hidden; /* Mantiene oculto el scroll horizontal si no lo necesitas */
+  
 }
 
 
@@ -132,9 +138,17 @@ body {
     overflow-y: hidden; /* Elimina el scroll vertical */
     height: 100vh; /* Asegura que el contenido ocupe el 100% de la ventana */
   }
+}
+
+@media (max-width: 820px) {
+  .contact-section{
+    background-image: url(images/fachada.jpg) ; 
+    background-repeat: repeat-y !important;
+  
+  }
+
 
   
-
 }
 
 
@@ -241,7 +255,7 @@ body {
   .contact-form,
   .contact-info {
     flex: 1 1 100%;
-    max-width: 100%;
+    max-width: 80%;
   }
 }
 
