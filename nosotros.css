@@ -133,7 +133,8 @@ body {
 .container-img img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Rellena el contenedor, recortando partes si es necesario */
+  object-fit: fill; /* Rellena el contenedor, recortando partes si es necesario */
+  transform: translateY(30px);
 }
 
 .overlay h1 {
