@@ -48,7 +48,7 @@ body {
 
 .logo img {
   max-height: 100%; /* Limita la altura al 100% del contenedor */
-  height: 70px; /* Define una altura fija para el logo */
+  height: 100%; /* Define una altura fija para el logo */
   width: auto; /* Mantiene la proporción del logo */
   border: none; /* Elimina cualquier borde */
 }
