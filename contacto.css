@@ -85,6 +85,7 @@ body {
 @media (max-width: 768px) {
   .nav-links {
     display: none; /* Oculta el menú en pantallas pequeñas */
+    margin: 0;
     position: absolute;
     top: 60px;
     left: 0;
