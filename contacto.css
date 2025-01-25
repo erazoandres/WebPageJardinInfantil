@@ -5,10 +5,6 @@
   box-sizing: border-box;
 }
 
-.contact-container{
-  display: flex;
-  justify-content: center;  
-}
 
 body {
   margin: 0;
@@ -104,6 +100,12 @@ body {
   .nav-links.show {
     display: flex; /* Muestra el menú cuando la clase 'show' está presente */
   }
+
+
+  .contact-container {
+    justify-content: center !important;
+  }
+
 
   .menu-toggle {
     display: block;
