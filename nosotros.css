@@ -128,7 +128,7 @@ body {
 
 .container-img img{
   width: 1500px;
-  height: 700px;
+  height: auto;
 
 }
 .overlay h1 {
